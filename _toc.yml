@@ -1,0 +1,20 @@
+# format: jb-article
+# root: index
+# sections:
+# - file: readme.md
+# - file: getting_started.md
+# - file: learn_more.md
+
+
+format: jb-book
+root: index
+parts:
+  - caption: Part 1
+    numbered: false  # Only applies to chapters in Part 1.
+    chapters:
+    - file: getting_started.md
+    - file: learn_more.md
+  - caption: Part 2
+    chapters:
+    - file: intro.md
+    - file: python_by_example.md

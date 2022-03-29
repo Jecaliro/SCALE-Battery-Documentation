@@ -1,0 +1,21 @@
+# In _config.yml
+title: Battery Application
+author: S. Pelletier
+logo: images\SCALE_logo.png
+execute:
+  execute_notebooks: force
+
+repository:
+  url                       : https://github.com/Jecaliro/TestDoc  # The URL to your book's repository
+  path_to_book              : ""  # A path to your book's folder, relative to the repository root.
+  branch                    : master  # Which branch of the repository should be used when creating links
+
+html:
+  favicon                   : "images/favicon.ico"  # A path to a favicon image
+  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  use_repository_button     : false  # Whether to add a link to your repository button
+  use_issues_button         : true  # Whether to add an "open an issue" button
+
+# Add a bibtex file so that we can create citations
+# bibtex_bibfiles:
+  # - references.bib
