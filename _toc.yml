@@ -9,12 +9,17 @@
 format: jb-book
 root: index
 parts:
-  - caption: Part 1
+  - caption: General Concept
     numbered: false  # Only applies to chapters in Part 1.
     chapters:
-    - file: getting_started.md
-    - file: learn_more.md
-  - caption: Part 2
+    - file: 01_Part01.ipynb
+    - file: 02_Part02.ipynb
+  - caption: Configuration
+    numbered: false  # Only applies to chapters in Part 1.
     chapters:
-    - file: intro.md
-    - file: python_by_example.md
+    - file: 03_Part03.ipynb
+    - file: 04_Part04.ipynb
+  - caption: Commissioning
+    chapters:
+    - file: 05_Part05.ipynb
+    - file: 06_Part06.ipynb
