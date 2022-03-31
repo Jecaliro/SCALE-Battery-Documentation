@@ -1,12 +1,13 @@
 # In _config.yml
 title: Battery Application
 author: S. Pelletier
+copyright: "2022"
 logo: images\SCALE_logo.png
 execute:
   execute_notebooks: force
 
 repository:
-  url                       : https://github.com/Jecaliro/TestDoc  # The URL to your book's repository
+  url                       : https://github.com/Jecaliro/SCALE-Battery-Documentation  # The URL to your book's repository
   path_to_book              : ""  # A path to your book's folder, relative to the repository root.
   branch                    : master  # Which branch of the repository should be used when creating links
 

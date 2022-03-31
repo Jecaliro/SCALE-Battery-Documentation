@@ -9,12 +9,12 @@
 format: jb-book
 root: index
 parts:
-  - caption: General Concept
+  - caption: Introduction
     numbered: false  # Only applies to chapters in Part 1.
     chapters:
     - file: 01_Part01.ipynb
     - file: 02_Part02.ipynb
-  - caption: Configuration
+  - caption: Installation
     numbered: false  # Only applies to chapters in Part 1.
     chapters:
     - file: 03_Part03.ipynb
