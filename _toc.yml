@@ -13,7 +13,8 @@ parts:
     numbered: false  # Only applies to chapters in Part 1.
     chapters:
     - file: 01_Part01.ipynb
-    - file: Multi-instance.ipynb
+    - file: 01_Part02.ipynb
+    - file: Multi-Instance.ipynb
   - caption: Installation
     numbered: false  # Only applies to chapters in Part 1.
     chapters:

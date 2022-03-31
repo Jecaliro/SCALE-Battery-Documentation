@@ -14,7 +14,7 @@
 # All others instances are completely independent and can perform test in real time using own channels, screens, alarms, methods, etc..
 # 
 
-# <p align="center"> <img src="./images/Multi-Instance-concept.png" style="width: 75%;" />
+# ![](./images/Multi-Instance-Concept.png)
 
 # There are still many things to investigate with this new multi-instance concept, and actual limitations are as follow:
 # 
@@ -35,11 +35,11 @@
 # 
 # You can add as many instances as needed, and also delete them if they are not needed anymore; 
 # 
-# <p align="center"> <img src="./images/Multi-Instance-activation.png" style="width: 50%;" />
+# ![](./images/Multi-Instance-Activation.png)
 
 # If no folders exist for multi-instance, **MENV** will create them and populate then with files from Master instance.
 # 
-# <p align="center"> <img src="./images/Multi-Instance-folder.png" style="width: 15%;" />
+# ![](./images/Multi-Instance-Folder.png)
 # 
 # If folders are already existing, no actions will be performed.
 
@@ -48,7 +48,7 @@
 # However, activation is not enough, as the whole system has to be configured in order to be able to run a test.
 # Configuration of each instance is done directly from **MENV** layer;
 # 
-# <p align="center"> <img src="./images/Multi-Instance-config.png" style="width: 50%;" />
+# ![](./images/Multi-Instance-Config.png)
 # 
 # Not all parameters have to be modified as we fixed some rules to simplify global configuration. Only:
 # * Initialization file (`Morphee.ini`)
@@ -72,13 +72,13 @@
 # 
 # By using MToolBar, you will every time prompted to know which instance you want to use;
 # 
-# <p align="center"> <img src="./images/Multi-Instance-mtoolbar.png" style="width: 50%;" />
+# ![](./images/Multi-Instance-Mtoolbar.png)
 # 
 # For;
 # * Starting **MORPHEE Editor**
 # * Starting **MORPHEE Executive**
 # 
-# Information of instance number is displayed on main Form and also in the main toolbar: <img src="./images/Multi-Instance-numbering.png" style="width: 10%;" />
+# Information of instance number is displayed on main Form and also in the main toolbar: ![](./images/Multi-Instance-numbering.png)
 # 
 
 # It can be very complex to work with many instances at the same time. Some basic rules can help to avoid problem link to quantity of place where modification can be done.
@@ -97,7 +97,7 @@
 
 # | Master Instance | Others instances |
 # |:----------------------------:|:--------:|
-# | <img src="./images/Multi-Instance-master.png" style="width: 90%;" /> | <img src="./images/Multi-Instance-instance.png" style="width: 90%;" />|
+# | ![](./images/Multi-Instance-Master.png) | ![](./images/Multi-Instance-Instance.png) |
 # 
 
 # ### Exchanging data between instances
@@ -109,17 +109,18 @@
 # 
 # The name of the channel in master instance has to be the same in others instance. The channel type has to be `[SHARED_IN]`
 # 
-# <p align="center"> <img src="./images/Multi-Instance-sharedall.png" style="width: 90%;" />
+# ![](./images/Multi-Instance-SharedAll.png)
 # 
 # _***Sharing a channel from master to a specific instance***_
 # 
 # To keep instance generic and use the same channel name, the physical channel has to redirect the standard name from the instance.
-# <p align="center"> <img src="./images/Multi-Instance-sharedin.png" style="width: 90%;" />
+# 
+# ![](./images/Multi-Instance-SharedIn.png)
 # 
 # _***Getting channel from instances***_
 # 
 # To send value of channel to master, it is also possible to use the same principle, but channel type must be `[SHARED-OUT]`.
 # 
-# <p align="center"> <img src="./images/Multi-Instance-sharedout.png" style="width: 90%;" />
+# ![](./images/Multi-Instance-Sharedout.png)
 
 # 
