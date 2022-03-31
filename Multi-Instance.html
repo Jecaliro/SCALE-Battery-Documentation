@@ -55,6 +55,8 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Part 3" href="03_Part03.html" />
+    <link rel="prev" title="General concept" href="01_Part01.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,10 +105,15 @@
   Introduction
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="01_Part01.html">
    General concept
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   MORPHEE® Multi-instance
   </a>
  </li>
 </ul>
@@ -342,7 +349,8 @@
 <p>In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibilities, FEV has developed a new MORPHEE multi-instance concept.</p>
 <p>Based on this, it is now possible to run several MORPHEE on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.</p>
 <p>All others instances are completely independent and can perform test in real time using own channels, screens, alarms, methods, etc..</p>
-<p align="center"> <img src="./images/Multi-Instance-concept.png" style="width: 75%;" /><p>There are still many things to investigate with this new multi-instance concept, and actual limitations are as follow:</p>
+<p><img alt="" src="_images/Multi-Instance-Concept.png" /></p>
+<p>There are still many things to investigate with this new multi-instance concept, and actual limitations are as follow:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Ref</p></th>
@@ -376,15 +384,16 @@ This limitations has been achieved with FEV 8 cores computer.</p>
 <h3>Activation<a class="headerlink" href="#activation" title="Permalink to this headline">¶</a></h3>
 <p>Activation of the multi-instance can be done quickly, as it is sufficient to specify in <strong>MENV</strong> (<strong>MORPHEE</strong> Environment software) that an additional instance is required.</p>
 <p>You can add as many instances as needed, and also delete them if they are not needed anymore;</p>
-<p align="center"> <img src="./images/Multi-Instance-activation.png" style="width: 50%;" /><p>If no folders exist for multi-instance, <strong>MENV</strong> will create them and populate then with files from Master instance.</p>
-<p align="center"> <img src="./images/Multi-Instance-folder.png" style="width: 15%;" />
+<p><img alt="" src="_images/Multi-Instance-Activation.png" /></p>
+<p>If no folders exist for multi-instance, <strong>MENV</strong> will create them and populate then with files from Master instance.</p>
+<p><img alt="" src="_images/Multi-Instance-Folder.png" /></p>
 <p>If folders are already existing, no actions will be performed.</p>
 </div>
 <div class="section" id="configuration">
 <h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
 <p>However, activation is not enough, as the whole system has to be configured in order to be able to run a test.
 Configuration of each instance is done directly from <strong>MENV</strong> layer;</p>
-<p align="center"> <img src="./images/Multi-Instance-config.png" style="width: 50%;" />
+<p><img alt="" src="_images/Multi-Instance-Config.png" /></p>
 <p>Not all parameters have to be modified as we fixed some rules to simplify global configuration. Only:</p>
 <ul class="simple">
 <li><p>Initialization file (<code class="docutils literal notranslate"><span class="pre">Morphee.ini</span></code>)</p></li>
@@ -409,13 +418,13 @@ Configuration of each instance is done directly from <strong>MENV</strong> layer
 <div class="section" id="editing-starting-a-specific-instance">
 <h3>Editing / Starting a specific instance<a class="headerlink" href="#editing-starting-a-specific-instance" title="Permalink to this headline">¶</a></h3>
 <p>By using MToolBar, you will every time prompted to know which instance you want to use;</p>
-<p align="center"> <img src="./images/Multi-Instance-mtoolbar.png" style="width: 50%;" />
+<p><img alt="" src="_images/Multi-Instance-Mtoolbar.png" /></p>
 <p>For;</p>
 <ul class="simple">
 <li><p>Starting <strong>MORPHEE Editor</strong></p></li>
 <li><p>Starting <strong>MORPHEE Executive</strong></p></li>
 </ul>
-<p>Information of instance number is displayed on main Form and also in the main toolbar: <img src="./images/Multi-Instance-numbering.png" style="width: 10%;" /></p>
+<p>Information of instance number is displayed on main Form and also in the main toolbar: <img alt="" src="_images/Multi-Instance-numbering.png" /></p>
 <p>It can be very complex to work with many instances at the same time. Some basic rules can help to avoid problem link to quantity of place where modification can be done.</p>
 <p>For example:</p>
 <ul class="simple">
@@ -443,8 +452,8 @@ Configuration of each instance is done directly from <strong>MENV</strong> layer
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:center"><p><img src="./images/Multi-Instance-master.png" style="width: 90%;" /></p></td>
-<td class="text-align:center"><p><img src="./images/Multi-Instance-instance.png" style="width: 90%;" /></p></td>
+<tr class="row-even"><td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Master.png" /></p></td>
+<td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Instance.png" /></p></td>
 </tr>
 </tbody>
 </table>
@@ -455,13 +464,14 @@ Configuration of each instance is done directly from <strong>MENV</strong> layer
 To make instance independent and use same component, following best practices could be used:</p>
 <p><em><em><strong>Sharing a channel from master instance to all instances</strong></em></em></p>
 <p>The name of the channel in master instance has to be the same in others instance. The channel type has to be <code class="docutils literal notranslate"><span class="pre">[SHARED_IN]</span></code></p>
-<p align="center"> <img src="./images/Multi-Instance-sharedall.png" style="width: 90%;" />
+<p><img alt="" src="_images/Multi-Instance-SharedAll.png" /></p>
 <p><em><em><strong>Sharing a channel from master to a specific instance</strong></em></em></p>
 <p>To keep instance generic and use the same channel name, the physical channel has to redirect the standard name from the instance.</p>
-<p align="center"> <img src="./images/Multi-Instance-sharedin.png" style="width: 90%;" />
+<p><img alt="" src="_images/Multi-Instance-SharedIn.png" /></p>
 <p><em><em><strong>Getting channel from instances</strong></em></em></p>
 <p>To send value of channel to master, it is also possible to use the same principle, but channel type must be <code class="docutils literal notranslate"><span class="pre">[SHARED-OUT]</span></code>.</p>
-<p align="center"> <img src="./images/Multi-Instance-sharedout.png" style="width: 90%;" /></div>
+<p><img alt="" src="_images/Multi-Instance-Sharedout.png" /></p>
+</div>
 </div>
 </div>
 
@@ -489,7 +499,21 @@ To make instance independent and use same component, following best practices co
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="01_Part01.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">General concept</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="03_Part03.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Part 3</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
