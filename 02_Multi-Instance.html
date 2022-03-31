@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>General presentation &#8212; Battery Application</title>
+    <title>MORPHEE® Multi-instance &#8212; Battery Application</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,6 +55,8 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Part 3" href="03_Part03.html" />
+    <link rel="prev" title="General presentation" href="01_General-presentation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,14 +105,14 @@
   Introduction
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="01_General-presentation.html">
    General presentation
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_Multi-Instance.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    MORPHEE® Multi-instance
   </a>
  </li>
@@ -194,7 +196,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/01_Part01.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/02_Multi-Instance.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -211,7 +213,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F01_Part01.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F02_Multi-Instance.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -227,23 +229,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/Jecaliro/SCALE-Battery-Documentation/master?urlpath=tree/01_Part01.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="lancement Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -255,24 +240,43 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-what-is-it">
-   Multi-Instance… What is it?
+  <a class="reference internal nav-link" href="#general-concept">
+   General concept
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-key-points">
-   Multi-Instance… Key points
+  <a class="reference internal nav-link" href="#multi-instance-activation-and-configuration">
+   Multi-Instance activation and configuration
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activation">
+     Activation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#configuration">
+     Configuration
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-references">
-   Multi-Instance… References
+  <a class="reference internal nav-link" href="#working-with-instances">
+   Working with Instances
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-limitation">
-   Multi-Instance… Limitation
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editing-starting-a-specific-instance">
+     Editing / Starting a specific instance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exchanging-data-between-instances">
+     Exchanging data between instances
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -284,7 +288,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>General presentation</h1>
+                <h1>MORPHEE® Multi-instance</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -295,24 +299,43 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-what-is-it">
-   Multi-Instance… What is it?
+  <a class="reference internal nav-link" href="#general-concept">
+   General concept
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-key-points">
-   Multi-Instance… Key points
+  <a class="reference internal nav-link" href="#multi-instance-activation-and-configuration">
+   Multi-Instance activation and configuration
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activation">
+     Activation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#configuration">
+     Configuration
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-references">
-   Multi-Instance… References
+  <a class="reference internal nav-link" href="#working-with-instances">
+   Working with Instances
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-limitation">
-   Multi-Instance… Limitation
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editing-starting-a-specific-instance">
+     Editing / Starting a specific instance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exchanging-data-between-instances">
+     Exchanging data between instances
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -323,99 +346,110 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="general-presentation">
-<h1>General presentation<a class="headerlink" href="#general-presentation" title="Permalink to this headline">¶</a></h1>
-<p>SCALE Battery has been developped to address all type of battery;</p>
-<ul class="simple">
-<li><p>Cell</p></li>
-<li><p>Module</p></li>
-<li><p>Pack</p></li>
-</ul>
-<p>To meet the market demand, we are using the <a class="reference internal" href="Multi-Instance.html"><span class="doc std std-doc">MORPHEE(r) multi-instance</span></a> concept.
-This allows to start on the the same computer;</p>
-<ul class="simple">
-<li><p>Up to 32 cell tests in parallel</p></li>
-<li><p>Up to 16 Module tests in parallel</p></li>
-<li><p>Up to 8 Packs in parallel</p></li>
-</ul>
-<div class="section" id="multi-instance-what-is-it">
-<h2>Multi-Instance… What is it?<a class="headerlink" href="#multi-instance-what-is-it" title="Permalink to this headline">¶</a></h2>
-<p>MORPHEE multi-instance makes it possible to run a dedicated number of instances, independent the one from the others, in parallel on one computer. Then, each MORPHEE becomes a complete automation system, with its own acquisition, its own test procedure, its own dashboard, and its own alarms.</p>
-<p align="center"> <img src="./images/Multi-Instance-Global.png" style="width: 15%;" />
-<p>In order to ensure cohabitation, some functions allow to exchange data between the different instances, facilitating measurement, events and equipment sharing.</p>
-<p>To consolidate multi-instance, a new concept of real time load balancing has been developed, allowing to take advantage of existing computer multi-core architecture.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="morphee-multi-instance">
+<h1>MORPHEE® Multi-instance<a class="headerlink" href="#morphee-multi-instance" title="Permalink to this headline">¶</a></h1>
+<p>Born from our internal need to have independent application running on the same hardware architecture, <strong>MORPHEE®</strong> multi-instance has been developed to ensure multiple tests execution independently in terms of procedure and securities.</p>
+<div class="section" id="general-concept">
+<h2>General concept<a class="headerlink" href="#general-concept" title="Permalink to this headline">¶</a></h2>
+<p>In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibilities, <strong>FEV</strong> has developed a new <strong>MORPHEE®</strong> multi-instance concept.</p>
+<p>Based on this, it is now possible to run several <strong>MORPHEE®</strong> on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.</p>
+<p>All others instances are completely independent and can perform test in real time using own channels, screens, alarms, methods, etc..</p>
+<p><img alt="" src="_images/Multi-Instance-Concept.png" /></p>
 </div>
-<div class="section" id="multi-instance-key-points">
-<h2>Multi-Instance… Key points<a class="headerlink" href="#multi-instance-key-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="multi-instance-activation-and-configuration">
+<h2>Multi-Instance activation and configuration<a class="headerlink" href="#multi-instance-activation-and-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="activation">
+<h3>Activation<a class="headerlink" href="#activation" title="Permalink to this headline">¶</a></h3>
+<p>Activation of the multi-instance can be done quickly, as it is sufficient to specify in <strong>MENV</strong> (<strong>MORPHEE</strong> Environment software) that an additional instance is required.</p>
+<p>You can add as many instances as needed, and also delete them if they are not needed anymore;</p>
+<p><img alt="" src="_images/Multi-Instance-Activation.png" /></p>
+<p>If no folders exist for multi-instance, <strong>MENV</strong> will create them and populate then with files from Master instance.</p>
+<p><img alt="" src="_images/Multi-Instance-Folder.png" /></p>
+<p>If folders are already existing, no actions will be performed.</p>
+</div>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<p>However, activation is not enough, as the whole system has to be configured in order to be able to run a test.
+Configuration of each instance is done directly from <strong>MENV</strong> layer;</p>
+<p><img alt="" src="_images/Multi-Instance-Config.png" /></p>
+<p>Not all parameters have to be modified as we fixed some rules to simplify global configuration. Only:</p>
 <ul class="simple">
-<li><p>One MORPHEE master with <strong>X</strong> MORPHEE instances at the same time</p>
+<li><p>Initialization file (<code class="docutils literal notranslate"><span class="pre">Morphee.ini</span></code>)</p></li>
+<li><p>Physical Configuration file (<code class="docutils literal notranslate"><span class="pre">Morphee.cfp</span></code>)</p></li>
+<li><p>Editor configuration (<code class="docutils literal notranslate"><span class="pre">UEditor.config</span></code>)</p></li>
+<li><p>Test Path and Result directory</p></li>
+</ul>
+<p>All other parameters are common to all instances, mainly:</p>
+<ul class="simple">
+<li><p>Components</p></li>
+<li><p>Templates</p></li>
+<li><p>Themes</p></li>
+<li><p>Skins</p></li>
+<li><p>Reports</p></li>
+<li><p>Automatic Session</p></li>
+<li><p>Binaries•	…</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="working-with-instances">
+<h2>Working with Instances<a class="headerlink" href="#working-with-instances" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="editing-starting-a-specific-instance">
+<h3>Editing / Starting a specific instance<a class="headerlink" href="#editing-starting-a-specific-instance" title="Permalink to this headline">¶</a></h3>
+<p>By using MToolBar, you will every time prompted to know which instance you want to use;</p>
+<p><img alt="" src="_images/Multi-Instance-Mtoolbar.png" /></p>
+<p>For;</p>
+<ul class="simple">
+<li><p>Starting <strong>MORPHEE Editor</strong></p></li>
+<li><p>Starting <strong>MORPHEE Executive</strong></p></li>
+</ul>
+<p>Information of instance number is displayed on main Form and also in the main toolbar: <img alt="" src="_images/Multi-Instance-numbering.png" /></p>
+<p>It can be very complex to work with many instances at the same time. Some basic rules can help to avoid problem link to quantity of place where modification can be done.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p>Use Meditor instance, only for configuration:</p>
 <ul>
-<li><p>Independent testing procedure</p></li>
-<li><p>Independent alarms</p></li>
-<li><p>Independent logging</p></li>
-<li><p>Independent screens</p></li>
+<li><p>Adding and configuring features</p></li>
+<li><p>Hardware links</p></li>
+<li><p>Test cell configuration</p></li>
 </ul>
 </li>
-<li><p>Possibility to use different shared hardware by instance. For example, use of one CAN channels in one instance and another one in another instance.</p></li>
-<li><p>Possibility to share channels values between instances through shared memory.</p></li>
-<li><p>Possibility to share events between instances for global synchronization, for example stop all instances, or pause all instances.</p></li>
+<li><p>Use Meditor master instance for all others things:</p>
+<ul>
+<li><p>Master instance configuration</p></li>
+<li><p>Component writing</p></li>
+<li><p>Test Writing</p></li>
+<li><p>Channel calibration</p></li>
+<li><p>Etc…</p></li>
 </ul>
-</div>
-<div class="section" id="multi-instance-references">
-<h2>Multi-Instance… References<a class="headerlink" href="#multi-instance-references" title="Permalink to this headline">¶</a></h2>
+</li>
+</ul>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Ref</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-odd"><th class="text-align:center head"><p>Master Instance</p></th>
+<th class="text-align:center head"><p>Others instances</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>SA-M64-MULTI-04</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>4</strong> test instances</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>SA-M64-MULTI-08</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>8</strong> test instances</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>SA-M64-MULTI-16</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>16</strong> test instances</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>SA-M64-MULTI-24</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>24</strong> test instances</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>SA-M64-MULTI-32</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>32</strong> test instances</p></td>
+<tr class="row-even"><td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Master.png" /></p></td>
+<td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Instance.png" /></p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="section" id="multi-instance-limitation">
-<h2>Multi-Instance… Limitation<a class="headerlink" href="#multi-instance-limitation" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Ref</p></th>
-<th class="head"><p>Master</p></th>
-<th class="head"><p>Instances</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Up to 1 + 8 instances</strong></p></td>
-<td><p>1 kHz</p></td>
-<td><p>1 kHz</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Up to 1 + 16 instances</strong></p></td>
-<td><p>500 Hz</p></td>
-<td><p>500 Hz</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Up to 1 + 32 instances</strong></p></td>
-<td><p>100 Hz</p></td>
-<td><p>100 Hz</p></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><p>[!NOTE]
-This limitations has been achieved with FEV 8 cores computer.</p>
-</div></blockquote>
+<div class="section" id="exchanging-data-between-instances">
+<h3>Exchanging data between instances<a class="headerlink" href="#exchanging-data-between-instances" title="Permalink to this headline">¶</a></h3>
+<p>Each instance can be completely autonomous. Nevertheless, in most cases, it is necessary to share measurement channels, or simply status paths, between the instances.
+To make instance independent and use same component, following best practices could be used:</p>
+<p><em><em><strong>Sharing a channel from master instance to all instances</strong></em></em></p>
+<p>The name of the channel in master instance has to be the same in others instance. The channel type has to be <code class="docutils literal notranslate"><span class="pre">[SHARED_IN]</span></code></p>
+<p><img alt="" src="_images/Multi-Instance-SharedAll.png" /></p>
+<p><em><em><strong>Sharing a channel from master to a specific instance</strong></em></em></p>
+<p>To keep instance generic and use the same channel name, the physical channel has to redirect the standard name from the instance.</p>
+<p><img alt="" src="_images/Multi-Instance-SharedIn.png" /></p>
+<p><em><em><strong>Getting channel from instances</strong></em></em></p>
+<p>To send value of channel to master, it is also possible to use the same principle, but channel type must be <code class="docutils literal notranslate"><span class="pre">[SHARED-OUT]</span></code>.</p>
+<p><img alt="" src="_images/Multi-Instance-Sharedout.png" /></p>
+</div>
 </div>
 </div>
 
@@ -443,7 +477,21 @@ This limitations has been achieved with FEV 8 cores computer.</p>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="01_General-presentation.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">General presentation</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="03_Part03.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Part 3</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>

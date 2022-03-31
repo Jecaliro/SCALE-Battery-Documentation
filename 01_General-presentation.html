@@ -55,6 +55,8 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MORPHEE® Multi-instance" href="02_Multi-Instance.html" />
+    <link rel="prev" title="SCALE Battery Documentation" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,9 +105,9 @@
   Introduction
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="01_General-presentation.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    General presentation
   </a>
  </li>
@@ -194,7 +196,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/01_Part01.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/01_General-presentation.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -211,7 +213,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F01_Part01.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F01_General-presentation.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -232,7 +234,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/Jecaliro/SCALE-Battery-Documentation/master?urlpath=tree/01_Part01.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/Jecaliro/SCALE-Battery-Documentation/master?urlpath=tree/01_General-presentation.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="lancement Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -255,23 +257,45 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-what-is-it">
-   Multi-Instance… What is it?
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-key-points">
-   Multi-Instance… Key points
+  <a class="reference internal nav-link" href="#battery-testing-principle">
+   Battery Testing principle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equipements-and-measure">
+     Equipements and measure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#energy-system-channel-concept">
+     Energy system channel concept
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modularity">
+     Modularity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#software-architecture">
+   Software architecture
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-references">
-   Multi-Instance… References
+  <a class="reference internal nav-link" href="#instances-capability">
+   Instances capability
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-limitation">
-   Multi-Instance… Limitation
+  <a class="reference internal nav-link" href="#instances-limitation">
+   Instances limitation
   </a>
  </li>
 </ul>
@@ -295,23 +319,45 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-what-is-it">
-   Multi-Instance… What is it?
+  <a class="reference internal nav-link" href="#introduction">
+   Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-key-points">
-   Multi-Instance… Key points
+  <a class="reference internal nav-link" href="#battery-testing-principle">
+   Battery Testing principle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equipements-and-measure">
+     Equipements and measure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#energy-system-channel-concept">
+     Energy system channel concept
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modularity">
+     Modularity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#software-architecture">
+   Software architecture
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-references">
-   Multi-Instance… References
+  <a class="reference internal nav-link" href="#instances-capability">
+   Instances capability
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-limitation">
-   Multi-Instance… Limitation
+  <a class="reference internal nav-link" href="#instances-limitation">
+   Instances limitation
   </a>
  </li>
 </ul>
@@ -325,44 +371,116 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="general-presentation">
 <h1>General presentation<a class="headerlink" href="#general-presentation" title="Permalink to this headline">¶</a></h1>
-<p>SCALE Battery has been developped to address all type of battery;</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p><strong>SCALE Battery</strong> has been developed to address all type of battery;</p>
 <ul class="simple">
 <li><p>Cell</p></li>
 <li><p>Module</p></li>
 <li><p>Pack</p></li>
 </ul>
-<p>To meet the market demand, we are using the <a class="reference internal" href="Multi-Instance.html"><span class="doc std std-doc">MORPHEE(r) multi-instance</span></a> concept.
+<p>To meet the market demand, we are using the <a class="reference internal" href="Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> concept.
 This allows to start on the the same computer;</p>
 <ul class="simple">
 <li><p>Up to 32 cell tests in parallel</p></li>
 <li><p>Up to 16 Module tests in parallel</p></li>
-<li><p>Up to 8 Packs in parallel</p></li>
+<li><p>Up to 8 Packs tests in parallel</p></li>
 </ul>
-<div class="section" id="multi-instance-what-is-it">
-<h2>Multi-Instance… What is it?<a class="headerlink" href="#multi-instance-what-is-it" title="Permalink to this headline">¶</a></h2>
-<p>MORPHEE multi-instance makes it possible to run a dedicated number of instances, independent the one from the others, in parallel on one computer. Then, each MORPHEE becomes a complete automation system, with its own acquisition, its own test procedure, its own dashboard, and its own alarms.</p>
-<p align="center"> <img src="./images/Multi-Instance-Global.png" style="width: 15%;" />
-<p>In order to ensure cohabitation, some functions allow to exchange data between the different instances, facilitating measurement, events and equipment sharing.</p>
-<p>To consolidate multi-instance, a new concept of real time load balancing has been developed, allowing to take advantage of existing computer multi-core architecture.</p>
 </div>
-<div class="section" id="multi-instance-key-points">
-<h2>Multi-Instance… Key points<a class="headerlink" href="#multi-instance-key-points" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="battery-testing-principle">
+<h2>Battery Testing principle<a class="headerlink" href="#battery-testing-principle" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="equipements-and-measure">
+<h3>Equipements and measure<a class="headerlink" href="#equipements-and-measure" title="Permalink to this headline">¶</a></h3>
+<p>To test a battery we need to have:</p>
 <ul class="simple">
-<li><p>One MORPHEE master with <strong>X</strong> MORPHEE instances at the same time</p>
-<ul>
-<li><p>Independent testing procedure</p></li>
-<li><p>Independent alarms</p></li>
-<li><p>Independent logging</p></li>
-<li><p>Independent screens</p></li>
+<li><p>An Energy System &gt;&gt; Allow to charge and discharge the battery. Generally it also manage the re-injection on the network.</p></li>
+<li><p>A climatic chamber - <em>optional</em> &gt;&gt; Allow to simulate environmental conditions</p></li>
+<li><p>A coolant conditionning system - <em>optional</em> &gt;&gt; use to cooldown the battery in same condition as in the vehicle.</p></li>
+<li><p>A BMS (<strong>B</strong>attery <strong>M</strong>angement <strong>S</strong>ystem) - <em>optional</em> &gt;&gt; Battery control unit handling the different cells/modules/pack and different modes (charge/sleep/Drive)</p></li>
+<li><p>Additionnal acquisition - <em>optional</em> &gt;&gt; Allow to add voltage, current and temperature measurement.</p></li>
 </ul>
-</li>
-<li><p>Possibility to use different shared hardware by instance. For example, use of one CAN channels in one instance and another one in another instance.</p></li>
-<li><p>Possibility to share channels values between instances through shared memory.</p></li>
-<li><p>Possibility to share events between instances for global synchronization, for example stop all instances, or pause all instances.</p></li>
+<p><img alt="" src="_images/Battery_test_concept.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Except Energy System, all others equipement can be ‘Optional’, depending on each application.</p>
+</div>
+</div>
+<div class="section" id="energy-system-channel-concept">
+<h3>Energy system channel concept<a class="headerlink" href="#energy-system-channel-concept" title="Permalink to this headline">¶</a></h3>
+<p>Energy System have one or several channel allowing to address one or several battery:</p>
+<ul class="simple">
+<li><p>If there is a need for more current, channels can we wired in parallel</p></li>
+<li><p>If there is a need for more voltage, channels can be wired in serial</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Parallel connexion</p></th>
+<th class="text-align:center head"><p>Serial connexion</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="" src="_images/Battery_test_parallel.png" /></p></td>
+<td class="text-align:center"><p><img alt="" src="_images/Battery_test_serial.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<p>Regarding equipement capability, it is also possible to combine Energy system cascading and channel parallelisation or serialisation.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Equipement and channel cascading</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="" src="_images/Battery_test_mixed.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="modularity">
+<h3>Modularity<a class="headerlink" href="#modularity" title="Permalink to this headline">¶</a></h3>
+<p>Generally, in one climatic chamber there will be several battery in test. Climatic condition are identical but tests can be different!</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>1 battery</p></th>
+<th class="text-align:center head"><p>4 batteries</p></th>
+<th class="text-align:center head"><p>12 batteries</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="" src="_images/Battery-modulo-1.png" /></p></td>
+<td class="text-align:center"><p><img alt="" src="_images/Battery-modulo-4.png" /></p></td>
+<td class="text-align:center"><p><img alt="" src="_images/Battery-Modulo-12.png" /></p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The quantity of test is directly linked to the quantity of Energy System channels.
+For example, if globaly a system has 8 channels, we can:</p>
+<ul class="simple">
+<li><p>Start 8 independant test using 1 channel each</p></li>
+<li><p>Start 4 independant test using 2 channel each (in // or serial)</p></li>
+<li><p>Start 2 independant test using 4 channel each (in // or serial)
+Possibility is given, in one side from the harware, and in the other side from the software configuration.</p></li>
 </ul>
 </div>
-<div class="section" id="multi-instance-references">
-<h2>Multi-Instance… References<a class="headerlink" href="#multi-instance-references" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="software-architecture">
+<h2>Software architecture<a class="headerlink" href="#software-architecture" title="Permalink to this headline">¶</a></h2>
+<p>Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic…), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in <a class="reference internal" href="Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> chapter.</p>
+<p><img alt="" src="_images/Battery_Concept.png" /></p>
+<p>Objective is to keep all instances as identical as possible. Only some interfaces can change;</p>
+<ul class="simple">
+<li><p>BMS</p></li>
+<li><p>Specif devices.</p></li>
+</ul>
+<p>A specific configuration (hardware connexion) can also be done for every instance..</p>
+</div>
+<div class="section" id="instances-capability">
+<h2>Instances capability<a class="headerlink" href="#instances-capability" title="Permalink to this headline">¶</a></h2>
+<p>Globally we limit the number of instances to 1 master and 32 instances.
+But regarding your need, we can limit it as follow:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Ref</p></th>
@@ -388,8 +506,9 @@ This allows to start on the the same computer;</p>
 </tbody>
 </table>
 </div>
-<div class="section" id="multi-instance-limitation">
-<h2>Multi-Instance… Limitation<a class="headerlink" href="#multi-instance-limitation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="instances-limitation">
+<h2>Instances limitation<a class="headerlink" href="#instances-limitation" title="Permalink to this headline">¶</a></h2>
+<p>Actual limitations are as follow:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Ref</p></th>
@@ -412,10 +531,10 @@ This allows to start on the the same computer;</p>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<div><p>[!NOTE]
-This limitations has been achieved with FEV 8 cores computer.</p>
-</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This limitations has been achieved with FEV 8 cores computer.</p>
+</div>
 </div>
 </div>
 
@@ -443,7 +562,21 @@ This limitations has been achieved with FEV 8 cores computer.</p>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">SCALE Battery Documentation</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="02_Multi-Instance.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">MORPHEE® Multi-instance</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
