@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>General concept &#8212; Battery Application</title>
+    <title>General presentation &#8212; Battery Application</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,8 +55,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="MORPHEE® Multi-instance" href="Multi-Instance.html" />
-    <link rel="prev" title="SCALE Battery Documentation" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -105,21 +103,21 @@
   Introduction
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   General concept
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_General-presentation.html">
+   General presentation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Multi-Instance.html">
+  <a class="reference internal" href="02_Multi-Instance.html">
    MORPHEE® Multi-instance
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Installation
+  Implementation
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -133,10 +131,15 @@
    Part 4
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Part02.html">
+   Software architecture
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Commissioning
+  Configuration
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -281,7 +284,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>General concept</h1>
+                <h1>General presentation</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -320,8 +323,21 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="general-concept">
-<h1>General concept<a class="headerlink" href="#general-concept" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="general-presentation">
+<h1>General presentation<a class="headerlink" href="#general-presentation" title="Permalink to this headline">¶</a></h1>
+<p>SCALE Battery has been developped to address all type of battery;</p>
+<ul class="simple">
+<li><p>Cell</p></li>
+<li><p>Module</p></li>
+<li><p>Pack</p></li>
+</ul>
+<p>To meet the market demand, we are using the <a class="reference internal" href="Multi-Instance.html"><span class="doc std std-doc">MORPHEE(r) multi-instance</span></a> concept.
+This allows to start on the the same computer;</p>
+<ul class="simple">
+<li><p>Up to 32 cell tests in parallel</p></li>
+<li><p>Up to 16 Module tests in parallel</p></li>
+<li><p>Up to 8 Packs in parallel</p></li>
+</ul>
 <div class="section" id="multi-instance-what-is-it">
 <h2>Multi-Instance… What is it?<a class="headerlink" href="#multi-instance-what-is-it" title="Permalink to this headline">¶</a></h2>
 <p>MORPHEE multi-instance makes it possible to run a dedicated number of instances, independent the one from the others, in parallel on one computer. Then, each MORPHEE becomes a complete automation system, with its own acquisition, its own test procedure, its own dashboard, and its own alarms.</p>
@@ -427,21 +443,7 @@ This limitations has been achieved with FEV 8 cores computer.</p>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">SCALE Battery Documentation</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="Multi-Instance.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">MORPHEE® Multi-instance</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
@@ -449,7 +451,7 @@ This limitations has been achieved with FEV 8 cores computer.</p>
     <footer class="footer">
   <p>
     
-      Par S. Pelletier<br/>
+      Par FEV Documentation Team<br/>
     
         &copy; droits d'auteur 2022.<br/>
   </p>

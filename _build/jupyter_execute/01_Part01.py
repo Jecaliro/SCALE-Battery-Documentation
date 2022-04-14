@@ -1,7 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # General concept
+# # General presentation
+# 
+# SCALE Battery has been developped to address all type of battery;
+# * Cell
+# * Module
+# * Pack
+# 
+# To meet the market demand, we are using the [MORPHEE(r) multi-instance](Multi-Instance.ipynb) concept.
+# This allows to start on the the same computer;
+# * Up to 32 cell tests in parallel
+# * Up to 16 Module tests in parallel
+# * Up to 8 Packs in parallel 
 
 # ## Multi-Instance... What is it?
 # 

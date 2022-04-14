@@ -12,15 +12,16 @@ parts:
   - caption: Introduction
     numbered: false  # Only applies to chapters in Part 1.
     chapters:
-    - file: 01_Part01.ipynb
-    - file: 01_Part02.ipynb
-    - file: Multi-Instance.ipynb
-  - caption: Installation
+    - file: 01_General-presentation.md
+    - file: 02_Multi-Instance.md
+    - file: 03_SCALE-Battery-Concept.ipynb
+  - caption: Implementation
     numbered: false  # Only applies to chapters in Part 1.
     chapters:
     - file: 03_Part03.ipynb
     - file: 04_Part04.ipynb
-  - caption: Commissioning
+    - file: 02_Part02.ipynb
+  - caption: Configuration
     chapters:
     - file: 05_Part05.ipynb
     - file: 06_Part06.ipynb

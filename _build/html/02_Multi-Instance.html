@@ -1,0 +1,516 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MORPHEE® Multi-instance &#8212; Battery Application</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Part 3" href="03_Part03.html" />
+    <link rel="prev" title="General presentation" href="01_General-presentation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/SCALE_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Battery Application</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   SCALE Battery Documentation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_General-presentation.html">
+   General presentation
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   MORPHEE® Multi-instance
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Implementation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_Part03.html">
+   Part 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_Part04.html">
+   Part 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Part02.html">
+   Software architecture
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Configuration
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_Part05.html">
+   Part 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_Part06.html">
+   Part 6
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/02_Multi-Instance.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        <a class="issues-button"
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F02_Multi-Instance.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-concept">
+   General concept
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multi-instance-activation-and-configuration">
+   Multi-Instance activation and configuration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activation">
+     Activation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#configuration">
+     Configuration
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-instances">
+   Working with Instances
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editing-starting-a-specific-instance">
+     Editing / Starting a specific instance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exchanging-data-between-instances">
+     Exchanging data between instances
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>MORPHEE® Multi-instance</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-concept">
+   General concept
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multi-instance-activation-and-configuration">
+   Multi-Instance activation and configuration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#activation">
+     Activation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#configuration">
+     Configuration
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-instances">
+   Working with Instances
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editing-starting-a-specific-instance">
+     Editing / Starting a specific instance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exchanging-data-between-instances">
+     Exchanging data between instances
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="morphee-multi-instance">
+<h1>MORPHEE® Multi-instance<a class="headerlink" href="#morphee-multi-instance" title="Permalink to this headline">¶</a></h1>
+<p>Born from our internal need to have independent application running on the same hardware architecture, <strong>MORPHEE®</strong> multi-instance has been developed to ensure multiple tests execution independently in terms of procedure and securities.</p>
+<div class="section" id="general-concept">
+<h2>General concept<a class="headerlink" href="#general-concept" title="Permalink to this headline">¶</a></h2>
+<p>In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibilities, <strong>FEV</strong> has developed a new <strong>MORPHEE®</strong> multi-instance concept.</p>
+<p>Based on this, it is now possible to run several <strong>MORPHEE®</strong> on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.</p>
+<p>All others instances are completely independent and can perform test in real time using own channels, screens, alarms, methods, etc..</p>
+<p><img alt="" src="_images/Multi-Instance-Concept.png" /></p>
+</div>
+<div class="section" id="multi-instance-activation-and-configuration">
+<h2>Multi-Instance activation and configuration<a class="headerlink" href="#multi-instance-activation-and-configuration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="activation">
+<h3>Activation<a class="headerlink" href="#activation" title="Permalink to this headline">¶</a></h3>
+<p>Activation of the multi-instance can be done quickly, as it is sufficient to specify in <strong>MENV</strong> (<strong>MORPHEE</strong> Environment software) that an additional instance is required.</p>
+<p>You can add as many instances as needed, and also delete them if they are not needed anymore;</p>
+<p><img alt="" src="_images/Multi-Instance-Activation.png" /></p>
+<p>If no folders exist for multi-instance, <strong>MENV</strong> will create them and populate then with files from Master instance.</p>
+<p><img alt="" src="_images/Multi-Instance-Folder.png" /></p>
+<p>If folders are already existing, no actions will be performed.</p>
+</div>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<p>However, activation is not enough, as the whole system has to be configured in order to be able to run a test.
+Configuration of each instance is done directly from <strong>MENV</strong> layer;</p>
+<p><img alt="" src="_images/Multi-Instance-Config.png" /></p>
+<p>Not all parameters have to be modified as we fixed some rules to simplify global configuration. Only:</p>
+<ul class="simple">
+<li><p>Initialization file (<code class="docutils literal notranslate"><span class="pre">Morphee.ini</span></code>)</p></li>
+<li><p>Physical Configuration file (<code class="docutils literal notranslate"><span class="pre">Morphee.cfp</span></code>)</p></li>
+<li><p>Editor configuration (<code class="docutils literal notranslate"><span class="pre">UEditor.config</span></code>)</p></li>
+<li><p>Test Path and Result directory</p></li>
+</ul>
+<p>All other parameters are common to all instances, mainly:</p>
+<ul class="simple">
+<li><p>Components</p></li>
+<li><p>Templates</p></li>
+<li><p>Themes</p></li>
+<li><p>Skins</p></li>
+<li><p>Reports</p></li>
+<li><p>Automatic Session</p></li>
+<li><p>Binaries•	…</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="working-with-instances">
+<h2>Working with Instances<a class="headerlink" href="#working-with-instances" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="editing-starting-a-specific-instance">
+<h3>Editing / Starting a specific instance<a class="headerlink" href="#editing-starting-a-specific-instance" title="Permalink to this headline">¶</a></h3>
+<p>By using MToolBar, you will every time prompted to know which instance you want to use;</p>
+<p><img alt="" src="_images/Multi-Instance-Mtoolbar.png" /></p>
+<p>For;</p>
+<ul class="simple">
+<li><p>Starting <strong>MORPHEE Editor</strong></p></li>
+<li><p>Starting <strong>MORPHEE Executive</strong></p></li>
+</ul>
+<p>Information of instance number is displayed on main Form and also in the main toolbar: <img alt="" src="_images/Multi-Instance-numbering.png" /></p>
+<p>It can be very complex to work with many instances at the same time. Some basic rules can help to avoid problem link to quantity of place where modification can be done.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p>Use Meditor instance, only for configuration:</p>
+<ul>
+<li><p>Adding and configuring features</p></li>
+<li><p>Hardware links</p></li>
+<li><p>Test cell configuration</p></li>
+</ul>
+</li>
+<li><p>Use Meditor master instance for all others things:</p>
+<ul>
+<li><p>Master instance configuration</p></li>
+<li><p>Component writing</p></li>
+<li><p>Test Writing</p></li>
+<li><p>Channel calibration</p></li>
+<li><p>Etc…</p></li>
+</ul>
+</li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Master Instance</p></th>
+<th class="text-align:center head"><p>Others instances</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Master.png" /></p></td>
+<td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Instance.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="exchanging-data-between-instances">
+<h3>Exchanging data between instances<a class="headerlink" href="#exchanging-data-between-instances" title="Permalink to this headline">¶</a></h3>
+<p>Each instance can be completely autonomous. Nevertheless, in most cases, it is necessary to share measurement channels, or simply status paths, between the instances.
+To make instance independent and use same component, following best practices could be used:</p>
+<p><em><em><strong>Sharing a channel from master instance to all instances</strong></em></em></p>
+<p>The name of the channel in master instance has to be the same in others instance. The channel type has to be <code class="docutils literal notranslate"><span class="pre">[SHARED_IN]</span></code></p>
+<p><img alt="" src="_images/Multi-Instance-SharedAll.png" /></p>
+<p><em><em><strong>Sharing a channel from master to a specific instance</strong></em></em></p>
+<p>To keep instance generic and use the same channel name, the physical channel has to redirect the standard name from the instance.</p>
+<p><img alt="" src="_images/Multi-Instance-SharedIn.png" /></p>
+<p><em><em><strong>Getting channel from instances</strong></em></em></p>
+<p>To send value of channel to master, it is also possible to use the same principle, but channel type must be <code class="docutils literal notranslate"><span class="pre">[SHARED-OUT]</span></code>.</p>
+<p><img alt="" src="_images/Multi-Instance-Sharedout.png" /></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="01_General-presentation.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">General presentation</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="03_Part03.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Part 3</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par FEV Documentation Team<br/>
+    
+        &copy; droits d'auteur 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

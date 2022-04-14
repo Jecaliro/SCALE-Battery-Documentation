@@ -2,18 +2,17 @@
 # coding: utf-8
 
 # # MORPHEE® Multi-instance
-# 
+# ---
 # Born from our internal need to have independent application running on the same hardware architecture, **MORPHEE®** multi-instance has been developed to ensure multiple tests execution independently in terms of procedure and securities.
 
 # ## General concept
 # 
-# In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibilities, FEV has developed a new MORPHEE multi-instance concept. 
+# In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibility, FEV has developed a new **MORPHEE** multi-instance concept. 
 # 
-# Based on this, it is now possible to run several MORPHEE on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.
+# Based on this, it is now possible to run several **MORPHEE** on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.
 # 
 # All others instances are completely independent and can perform test in real time using own channels, screens, alarms, methods, etc..
 # 
-
 # ![](./images/Multi-Instance-Concept.png)
 
 # There are still many things to investigate with this new multi-instance concept, and actual limitations are as follow:

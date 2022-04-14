@@ -55,8 +55,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Part 3" href="03_Part03.html" />
-    <link rel="prev" title="General concept" href="01_Part01.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -105,21 +103,21 @@
   Introduction
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01_Part01.html">
-   General concept
+  <a class="reference internal" href="01_General-presentation.html">
+   General presentation
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Multi-Instance.html">
    MORPHEE® Multi-instance
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Installation
+  Implementation
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -133,10 +131,15 @@
    Part 4
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Part02.html">
+   Software architecture
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Commissioning
+  Configuration
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -343,11 +346,12 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="morphee-multi-instance">
 <h1>MORPHEE® Multi-instance<a class="headerlink" href="#morphee-multi-instance" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
 <p>Born from our internal need to have independent application running on the same hardware architecture, <strong>MORPHEE®</strong> multi-instance has been developed to ensure multiple tests execution independently in terms of procedure and securities.</p>
 <div class="section" id="general-concept">
 <h2>General concept<a class="headerlink" href="#general-concept" title="Permalink to this headline">¶</a></h2>
-<p>In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibilities, FEV has developed a new MORPHEE multi-instance concept.</p>
-<p>Based on this, it is now possible to run several MORPHEE on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.</p>
+<p>In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibility, FEV has developed a new <strong>MORPHEE</strong> multi-instance concept.</p>
+<p>Based on this, it is now possible to run several <strong>MORPHEE</strong> on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.</p>
 <p>All others instances are completely independent and can perform test in real time using own channels, screens, alarms, methods, etc..</p>
 <p><img alt="" src="_images/Multi-Instance-Concept.png" /></p>
 <p>There are still many things to investigate with this new multi-instance concept, and actual limitations are as follow:</p>
@@ -499,21 +503,7 @@ To make instance independent and use same component, following best practices co
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="01_Part01.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">General concept</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="03_Part03.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Part 3</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
@@ -521,7 +511,7 @@ To make instance independent and use same component, following best practices co
     <footer class="footer">
   <p>
     
-      Par S. Pelletier<br/>
+      Par FEV Documentation Team<br/>
     
         &copy; droits d'auteur 2022.<br/>
   </p>
