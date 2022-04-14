@@ -8,3 +8,6 @@ compiler la doc
 > jupyter-book build DOCMD/
 Compiler en forcant le rebuild
 > jupyter-book build --all DOCMD/
+
+```{image} ./images/Ueditor_Bench_Config.png
+```
