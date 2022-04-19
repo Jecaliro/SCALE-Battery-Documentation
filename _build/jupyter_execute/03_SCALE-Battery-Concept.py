@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Software architecture
+# # SCALE Battery Concept
 
 # ## Concept
 # Software architecture is based in one hand, on a master application managing most Devices, and on another hand, on several procedure executing the test (call instances);

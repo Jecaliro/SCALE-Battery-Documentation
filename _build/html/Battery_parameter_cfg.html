@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuration of ‘IniEditor’ &#8212; Battery Application</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/SCALE_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Battery Application</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   SCALE Battery Documentation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_General-presentation.html">
+   General presentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Multi-Instance.html">
+   MORPHEE® Multi-instance
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Configuration
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="03_First-Installation.html">
+   First Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_Base-configuration.html">
+   Base configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_SCALE_Battery-configuration.html">
+   Runtime configuration
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Utilization
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_Starting_An_instance.html">
+   Starting an Instance
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Battery_parameter_cfg.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        <a class="issues-button"
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2FBattery_parameter_cfg.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Configuration of ‘IniEditor’</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="configuration-of-inieditor">
+<h1>Configuration of ‘IniEditor’<a class="headerlink" href="#configuration-of-inieditor" title="Permalink to this headline">¶</a></h1>
+<p><img alt="Ini Editor" src="_images/MO_Batterie_Config.png" /></p>
+<p><img alt="Ini Editor" src="_images/MO_Batterie_selection.png" /></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">DB</span><span class="p">]</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">MANUFACTURER</span><span class="o">=</span><span class="n">TESLA</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">SERIAL_NUMBER</span><span class="o">=</span><span class="mi">84</span><span class="n">MP</span><span class="o">-</span><span class="mi">12</span><span class="n">Q</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">CAPACITY_NOM</span><span class="o">=</span><span class="mi">22</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">CURRENT_NOM</span><span class="o">=</span><span class="mi">133</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">CURRENT_MIN</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">CURRENT_MAX</span><span class="o">=</span><span class="mi">135</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">CURRENT_CHARGE_MAX</span><span class="o">=</span><span class="mi">120</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">CURRENT_DISCHARGE_MAX</span><span class="o">=-</span><span class="mi">122</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">POWER_NOM</span><span class="o">=</span><span class="mi">130</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">POWER_MIN</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">POWER_MAX</span><span class="o">=</span><span class="mi">135</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">VOLTAGE_NOM</span><span class="o">=</span><span class="mi">180</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">VOLTAGE_MAX</span><span class="o">=</span><span class="mi">200</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">VOLTAGE_MIN</span><span class="o">=</span><span class="mi">80</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">VOLTAGE_CHARGE_MAX</span><span class="o">=</span><span class="mi">175</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">VOLTAGE_DISCHARGE_MAX</span><span class="o">=</span><span class="mi">100</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">TYPE</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">ARCHITECTURE</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">TECHNOLOGY</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">DESCRIPTION</span><span class="o">=</span><span class="n">Demonstration</span> <span class="n">batterie</span> <span class="mi">1</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">OPERATING_TEMP_MIN</span><span class="o">=-</span><span class="mi">10</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">OPERATING_TEMP_MAX</span><span class="o">=</span><span class="mi">55</span>
+<span class="n">P_DUT</span><span class="o">.</span><span class="n">IDENTIFIER</span><span class="o">=</span><span class="n">EXEMPLE_BAT_T001</span>
+</pre></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+<span class="p">&lt;</span><span class="nt">ConfigDesc</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">Group</span> <span class="na">Id</span><span class="o">=</span><span class="s">&quot;Battery&quot;</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">Category</span> <span class="na">Id</span><span class="o">=</span><span class="s">&quot;0 - General Configuration&quot;</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.MANUFACTURER&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;NotEmptyString&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Manufacturer&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery manufacturer&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.SERIAL_NUMBER&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;NotEmptyString&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Serial number&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery serial number&quot;</span><span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.IDENTIFIER&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;NotEmptyString&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Identifier&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Unique identifier&quot;</span><span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.DESCRIPTION&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;String&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Description&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Free description field&quot;</span><span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.TECHNOLOGY&quot;</span>  <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,3]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Battery technology&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery technology&quot;</span> <span class="na">DefaultValue</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span>
+				<span class="p">&lt;</span><span class="nt">TypeConverter</span> <span class="na">Localizable</span><span class="o">=</span><span class="s">&quot;false&quot;</span><span class="p">&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Lithium-ion&quot;</span> <span class="p">/&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Lithium-sulphur&quot;</span> <span class="p">/&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;2&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Aluminium-air&quot;</span> <span class="p">/&gt;</span>
+				<span class="p">&lt;/</span><span class="nt">TypeConverter</span><span class="p">&gt;</span>
+			<span class="p">&lt;/</span><span class="nt">Property</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.TYPE&quot;</span>  <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,2]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Battery type&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery type (A, B or C)&quot;</span> <span class="na">DefaultValue</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span>
+				<span class="p">&lt;</span><span class="nt">TypeConverter</span> <span class="na">Localizable</span><span class="o">=</span><span class="s">&quot;false&quot;</span><span class="p">&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Type A&quot;</span> <span class="p">/&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Type B&quot;</span> <span class="p">/&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;2&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Type C&quot;</span> <span class="p">/&gt;</span>
+				<span class="p">&lt;/</span><span class="nt">TypeConverter</span><span class="p">&gt;</span>
+			<span class="p">&lt;/</span><span class="nt">Property</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.ARCHITECTURE&quot;</span>  <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,2]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Battery architecture&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery architecture (X, Y or Z)&quot;</span> <span class="na">DefaultValue</span><span class="o">=</span><span class="s">&quot;0&quot;</span><span class="p">&gt;</span>
+				<span class="p">&lt;</span><span class="nt">TypeConverter</span> <span class="na">Localizable</span><span class="o">=</span><span class="s">&quot;false&quot;</span><span class="p">&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Type X&quot;</span> <span class="p">/&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Type Y&quot;</span> <span class="p">/&gt;</span>
+					<span class="p">&lt;</span><span class="nt">Value</span> <span class="na">Value</span><span class="o">=</span><span class="s">&quot;2&quot;</span> <span class="na">DisplayValue</span><span class="o">=</span><span class="s">&quot;Type Z&quot;</span> <span class="p">/&gt;</span>
+				<span class="p">&lt;/</span><span class="nt">TypeConverter</span><span class="p">&gt;</span>
+			<span class="p">&lt;/</span><span class="nt">Property</span><span class="p">&gt;</span>
+		<span class="p">&lt;/</span><span class="nt">Category</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">Category</span> <span class="na">Id</span><span class="o">=</span><span class="s">&quot;1 - Temperature&quot;</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.OPERATING_TEMP_MIN&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[-100,100]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Min operating temperature (°C)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Minimum temperature&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.OPERATING_TEMP_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[-100,100]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Max operating temperature (°C)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Maximum temperature&quot;</span><span class="p">/&gt;</span>
+		<span class="p">&lt;/</span><span class="nt">Category</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">Category</span> <span class="na">Id</span><span class="o">=</span><span class="s">&quot;2 - Capacity&quot;</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.CAPACITY_NOM&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,2000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Nominal capacity (A.h)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery capacity&quot;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;/</span><span class="nt">Category</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">Category</span> <span class="na">Id</span><span class="o">=</span><span class="s">&quot;3 - Current&quot;</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.CURRENT_NOM&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Nominal current (A)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery nominal current&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.CURRENT_MIN&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Min current (A)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery minimum current&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.CURRENT_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Max current (A)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery maximum current&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.CURRENT_CHARGE_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Maximum Charge current (A)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Maximum charge current&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.CURRENT_DISCHARGE_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[-1000,0]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Maximum discharge current (A)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Maximum discharge current&quot;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;/</span><span class="nt">Category</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">Category</span> <span class="na">Id</span><span class="o">=</span><span class="s">&quot;4 - Voltage&quot;</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.VOLTAGE_NOM&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Nominal voltage (V)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery nominal voltage&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.VOLTAGE_MIN&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Min voltage (V)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery minimum voltage&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.VOLTAGE_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Max voltage (V)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery maximum voltage&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.VOLTAGE_CHARGE_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Maximum Charge voltage (V)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Maximum charge voltage&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.VOLTAGE_DISCHARGE_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Maximum discharge voltage (V)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Maximum discharge voltage&quot;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;/</span><span class="nt">Category</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">Category</span> <span class="na">Id</span><span class="o">=</span><span class="s">&quot;5 - Power&quot;</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.POWER_NOM&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Nominal power (kW)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery nominal power&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.POWER_MIN&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Min power (kW)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery minimum power&quot;</span> <span class="p">/&gt;</span>
+			<span class="p">&lt;</span><span class="nt">Property</span> <span class="na">Section</span><span class="o">=</span><span class="s">&quot;DB&quot;</span> <span class="na">Field</span><span class="o">=</span><span class="s">&quot;P_DUT.POWER_MAX&quot;</span> <span class="na">Type</span><span class="o">=</span><span class="s">&quot;Int[0,1000]&quot;</span> <span class="na">DisplayName</span><span class="o">=</span><span class="s">&quot;Max power (kW)&quot;</span> <span class="na">Description</span><span class="o">=</span><span class="s">&quot;Battery maximum power&quot;</span> <span class="p">/&gt;</span>
+		<span class="p">&lt;/</span><span class="nt">Category</span><span class="p">&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">Group</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ConfigDesc</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par FEV Documentation Team<br/>
+    
+        &copy; droits d'auteur 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

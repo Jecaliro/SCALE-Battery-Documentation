@@ -1,0 +1,49 @@
+\selectlanguage *{english}
+\contentsline {part}{I\hspace {1em}Introduction}{3}{part.1}%
+\contentsline {chapter}{\numberline {1}General presentation}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Battery Testing principle}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Equipements and measure}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Energy system channel concept}{6}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Modularity}{7}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Software architecture}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Instances capability}{9}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Instances limitation}{9}{section.1.5}%
+\contentsline {chapter}{\numberline {2}MORPHEE® Multi\sphinxhyphen {}instance}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}General concept}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Multi\sphinxhyphen {}Instance activation and configuration}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Activation}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Configuration}{13}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Working with Instances}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Editing / Starting a specific instance}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Exchanging data between instances}{15}{subsection.2.3.2}%
+\contentsline {part}{II\hspace {1em}Configuration}{17}{part.2}%
+\contentsline {chapter}{\numberline {3}First Installation}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Software Installation}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Licensing / Protection}{19}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Base configuration}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Principle}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Component role}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Definition}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Configuration in UEditor}{23}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}MultiInstance configuration}{24}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Configuration without any hardware}{24}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Configuration with hardware}{25}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}First start}{26}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Runtime configuration}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dashboard}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Channel affectation}{28}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Definition}{29}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Configuration in UEditor}{30}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}MultiInstance configuration}{32}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Configuration without any hardware}{32}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Configuration with hardware}{33}{subsection.5.2.5}%
+\contentsline {section}{\numberline {5.3}First start}{34}{section.5.3}%
+\contentsline {part}{III\hspace {1em}Utilization}{35}{part.3}%
+\contentsline {chapter}{\numberline {6}SCALE Battery Concept}{37}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Concept}{37}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Configuration}{37}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Component role}{37}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Hardware Configuration}{38}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Software configuration}{39}{subsection.6.2.3}%
+\contentsline {subsubsection}{Master and Instance configuration}{40}{subsubsection*.3}%
