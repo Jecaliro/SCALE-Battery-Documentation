@@ -10,8 +10,11 @@ Nevertheless, it will be possible to test all equipement one by one when it will
 ## Principle
 
 Concept of the SCALE Battery configuration is to use most of the equipement in the master instance and to give the possibility for each instance to attach to one (or more) equipement through 'Sharing' components;
-  
-![](./images/Battery_Concept.png)
+
+````{div} full-width
+```{image} ./images/Battery_Concept.png
+```
+````
 
 The Sharing equipements take care of all present equipement of the familly;
 
