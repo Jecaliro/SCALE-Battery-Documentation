@@ -59,8 +59,8 @@ By using MToolBar, you will every time prompted to know which instance you want 
 ![](./images/Multi-Instance-Mtoolbar.png)
 
 For;
-* Starting **MORPHEE Editor**
-* Starting **MORPHEE Executive**
+* Starting **MORPHEE® Editor**
+* Starting **MORPHEE® Executive**
 
 Information of instance number is displayed on main Form and also in the main toolbar: ![](./images/Multi-Instance-numbering.png)
 

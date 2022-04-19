@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MORPHEE® Multi-instance &#8212; Battery Application</title>
+    <title>Starting an Instance &#8212; Battery Application</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,8 +55,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="First Installation" href="03_First-Installation.html" />
-    <link rel="prev" title="General presentation" href="01_General-presentation.html" />
+    <link rel="prev" title="Runtime configuration" href="05_SCALE_Battery-configuration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -105,14 +104,14 @@
   Introduction
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="01_General-presentation.html">
    General presentation
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Multi-Instance.html">
    MORPHEE® Multi-instance
   </a>
  </li>
@@ -144,9 +143,9 @@
   Utilization
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="06_Starting_An_instance.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Starting an Instance
   </a>
  </li>
@@ -191,7 +190,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/02_Multi-Instance.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/06_Starting_An_instance.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -208,7 +207,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F02_Multi-Instance.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F06_Starting_An_instance.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -235,40 +234,28 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-concept">
-   General concept
+  <a class="reference internal nav-link" href="#the-first-start">
+   The first start
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-activation-and-configuration">
-   Multi-Instance activation and configuration
+  <a class="reference internal nav-link" href="#testing-the-functionnalities">
+   Testing the functionnalities
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#activation">
-     Activation
+    <a class="reference internal nav-link" href="#the-control-management">
+     The Control Management
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#configuration">
-     Configuration
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#working-with-instances">
-   Working with Instances
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#editing-starting-a-specific-instance">
-     Editing / Starting a specific instance
+    <a class="reference internal nav-link" href="#the-coolant-confitioning">
+     The coolant confitioning
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exchanging-data-between-instances">
-     Exchanging data between instances
+    <a class="reference internal nav-link" href="#the-climatic-chamber">
+     The climatic chamber
     </a>
    </li>
   </ul>
@@ -283,7 +270,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>MORPHEE® Multi-instance</h1>
+                <h1>Starting an Instance</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -294,40 +281,28 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-concept">
-   General concept
+  <a class="reference internal nav-link" href="#the-first-start">
+   The first start
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-activation-and-configuration">
-   Multi-Instance activation and configuration
+  <a class="reference internal nav-link" href="#testing-the-functionnalities">
+   Testing the functionnalities
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#activation">
-     Activation
+    <a class="reference internal nav-link" href="#the-control-management">
+     The Control Management
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#configuration">
-     Configuration
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#working-with-instances">
-   Working with Instances
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#editing-starting-a-specific-instance">
-     Editing / Starting a specific instance
+    <a class="reference internal nav-link" href="#the-coolant-confitioning">
+     The coolant confitioning
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exchanging-data-between-instances">
-     Exchanging data between instances
+    <a class="reference internal nav-link" href="#the-climatic-chamber">
+     The climatic chamber
     </a>
    </li>
   </ul>
@@ -341,109 +316,147 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="morphee-multi-instance">
-<h1>MORPHEE® Multi-instance<a class="headerlink" href="#morphee-multi-instance" title="Permalink to this headline">¶</a></h1>
-<p>Born from our internal need to have independent application running on the same hardware architecture, <strong>MORPHEE®</strong> multi-instance has been developed to ensure multiple tests execution independently in terms of procedure and securities.</p>
-<div class="section" id="general-concept">
-<h2>General concept<a class="headerlink" href="#general-concept" title="Permalink to this headline">¶</a></h2>
-<p>In order to meet the growing need for multi-UUT testing, especially in the field of battery, and after many feasibilities, <strong>FEV</strong> has developed a new <strong>MORPHEE®</strong> multi-instance concept.</p>
-<p>Based on this, it is now possible to run several <strong>MORPHEE®</strong> on the same computer.  The first instance is seen as the ‘master instance’ (or main instance). It can be used to orchestrate all the other instances, to centralize hardware, share channels and distribute events.</p>
-<p>All others instances are completely independent and can perform test in real time using own channels, screens, alarms, methods, etc..</p>
-<p><img alt="" src="_images/Multi-Instance-Concept.png" /></p>
-</div>
-<div class="section" id="multi-instance-activation-and-configuration">
-<h2>Multi-Instance activation and configuration<a class="headerlink" href="#multi-instance-activation-and-configuration" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="activation">
-<h3>Activation<a class="headerlink" href="#activation" title="Permalink to this headline">¶</a></h3>
-<p>Activation of the multi-instance can be done quickly, as it is sufficient to specify in <strong>MENV</strong> (<strong>M</strong>ORPHEE <strong>Env</strong>ironment software) that an additional instance is required.</p>
-<p>You can add as many instances as needed, and also delete them if they are not needed anymore;</p>
-<p><img alt="" src="_images/Multi-Instance-Activation.png" /></p>
-<p>If no folders exist for multi-instance, <strong>MENV</strong> will create them and populate then with files from Master instance.</p>
-<p><img alt="" src="_images/Multi-Instance-Folder.png" /></p>
-<p>If folders are already existing, no actions will be performed.</p>
-</div>
-<div class="section" id="configuration">
-<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
-<p>However, activation is not enough, as the whole system has to be configured in order to be able to run a test.
-Configuration of each instance is done directly from <strong>MENV</strong> layer;</p>
-<p><img alt="" src="_images/Multi-Instance-Config.png" /></p>
-<p>Not all parameters have to be modified as we fixed some rules to simplify global configuration. Only:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="starting-an-instance">
+<h1>Starting an Instance<a class="headerlink" href="#starting-an-instance" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-first-start">
+<h2>The first start<a class="headerlink" href="#the-first-start" title="Permalink to this headline">¶</a></h2>
+<p>When your configuration is complete, you are ready to start your first instance. By default, you should see some battery description and at least one basic test (EMPTY_TEST_NEWCMA):</p>
+<p><img alt="" src="_images/MO_Inst_First_start.png" /></p>
+<ol class="simple">
+<li><p>Select a battery definition</p></li>
+<li><p>Select the test: EMPTY_TEST</p></li>
+<li><p>Push the ‘PLAY BUTTON’</p></li>
+</ol>
+<p>This should result in:
+<img alt="" src="_images/MO_Inst_Main_screen.png" /></p>
 <ul class="simple">
-<li><p>Initialization file (<code class="docutils literal notranslate"><span class="pre">Morphee.ini</span></code>)</p></li>
-<li><p>Physical Configuration file (<code class="docutils literal notranslate"><span class="pre">Morphee.cfp</span></code>)</p></li>
-<li><p>Editor configuration (<code class="docutils literal notranslate"><span class="pre">UEditor.config</span></code>)</p></li>
-<li><p>Test Path and Result directory</p></li>
-</ul>
-<p>All other parameters are common to all instances, mainly:</p>
-<ul class="simple">
-<li><p>Components</p></li>
-<li><p>Templates</p></li>
-<li><p>Themes</p></li>
-<li><p>Skins</p></li>
-<li><p>Reports</p></li>
-<li><p>Automatic Session</p></li>
-<li><p>Binaries•	…</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="working-with-instances">
-<h2>Working with Instances<a class="headerlink" href="#working-with-instances" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="editing-starting-a-specific-instance">
-<h3>Editing / Starting a specific instance<a class="headerlink" href="#editing-starting-a-specific-instance" title="Permalink to this headline">¶</a></h3>
-<p>By using MToolBar, you will every time prompted to know which instance you want to use;</p>
-<p><img alt="" src="_images/Multi-Instance-Mtoolbar.png" /></p>
-<p>For;</p>
-<ul class="simple">
-<li><p>Starting <strong>MORPHEE® Editor</strong></p></li>
-<li><p>Starting <strong>MORPHEE® Executive</strong></p></li>
-</ul>
-<p>Information of instance number is displayed on main Form and also in the main toolbar: <img alt="" src="_images/Multi-Instance-numbering.png" /></p>
-<p>It can be very complex to work with many instances at the same time. Some basic rules can help to avoid problem link to quantity of place where modification can be done.</p>
-<p>For example:</p>
-<ul class="simple">
-<li><p>Use Meditor instance, only for configuration:</p>
+<li><p>In the top left, you should see the instance number</p></li>
+<li><p>On main screen:</p>
 <ul>
-<li><p>Adding and configuring features</p></li>
-<li><p>Hardware links</p></li>
-<li><p>Test cell configuration</p></li>
-</ul>
-</li>
-<li><p>Use Meditor master instance for all others things:</p>
-<ul>
-<li><p>Master instance configuration</p></li>
-<li><p>Component writing</p></li>
-<li><p>Test Writing</p></li>
-<li><p>Channel calibration</p></li>
-<li><p>Etc…</p></li>
+<li><p>The control Management interface</p></li>
+<li><p>The coolant conditioning interface</p></li>
+<li><p>The climatic chamber interface</p></li>
 </ul>
 </li>
 </ul>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:center head"><p>Master Instance</p></th>
-<th class="text-align:center head"><p>Others instances</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Master.png" /></p></td>
-<td class="text-align:center"><p><img alt="" src="_images/Multi-Instance-Instance.png" /></p></td>
-</tr>
-</tbody>
-</table>
 </div>
-<div class="section" id="exchanging-data-between-instances">
-<h3>Exchanging data between instances<a class="headerlink" href="#exchanging-data-between-instances" title="Permalink to this headline">¶</a></h3>
-<p>Each instance can be completely autonomous. Nevertheless, in most cases, it is necessary to share measurement channels, or simply status paths, between the instances.
-To make instance independent and use same component, following best practices could be used:</p>
-<p><em><em><strong>Sharing a channel from master instance to all instances</strong></em></em></p>
-<p>The name of the channel in master instance has to be the same in others instance. The channel type has to be <code class="docutils literal notranslate"><span class="pre">[SHARED_IN]</span></code></p>
-<p><img alt="" src="_images/Multi-Instance-SharedAll.png" /></p>
-<p><em><em><strong>Sharing a channel from master to a specific instance</strong></em></em></p>
-<p>To keep instance generic and use the same channel name, the physical channel has to redirect the standard name from the instance.</p>
-<p><img alt="" src="_images/Multi-Instance-SharedIn.png" /></p>
-<p><em><em><strong>Getting channel from instances</strong></em></em></p>
-<p>To send value of channel to master, it is also possible to use the same principle, but channel type must be <code class="docutils literal notranslate"><span class="pre">[SHARED-OUT]</span></code>.</p>
-<p><img alt="" src="_images/Multi-Instance-Sharedout.png" /></p>
+<div class="section" id="testing-the-functionnalities">
+<h2>Testing the functionnalities<a class="headerlink" href="#testing-the-functionnalities" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-control-management">
+<h3>The Control Management<a class="headerlink" href="#the-control-management" title="Permalink to this headline">¶</a></h3>
+<p>Once the instance started, you should <strong>PREPARE</strong> the different component. For this, push the <strong>PREPARE</strong> button on the top right.</p>
+<p>When prepared, you are ready to send commands to the related <strong>ENERGY_SYSTEM</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Control Management</strong></p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text"><img alt="" src="_images/MO_Inst_CMA.png" /></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<ul class="simple">
+<li><p class="card-text">States:</p>
+<ul>
+<li><p class="card-text"><strong>Rest</strong>: Battery is in Idle mode</p></li>
+<li><p class="card-text"><strong>Current</strong>: Battery is in Current mode</p></li>
+<li><p class="card-text"><strong>Volatge</strong>: Battery is in Voltage mode</p></li>
+<li><p class="card-text"><strong>Power</strong>: Battery is in Power mode</p></li>
+<li><p class="card-text"><em>Each button will select the related mode</em></p></li>
+</ul>
+</li>
+<li><p class="card-text">When the mode is set:</p>
+<ul>
+<li><p class="card-text">Setpoint can be send through S_CMA.<strong>f</strong>_SET (where <strong>f</strong> is either I, V or P)</p></li>
+<li><p class="card-text">Measurement are read in R_CMA.<strong>f</strong>_ACT (where <strong>f</strong> is either I, V or P)</p></li>
+</ul>
+</li>
+<li><p class="card-text">Integrated function:</p>
+<ul>
+<li><p class="card-text">SET_CC: Integrated command to send current setpoint with voltage and duration limit.</p></li>
+<li><p class="card-text">SET_CV: Integrated command to send voltage setpoint with current and duration limit.</p></li>
+<li><p class="card-text">SET_CP: Integrated command to send power setpoint with voltage and duration limit.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-coolant-confitioning">
+<h3>The coolant confitioning<a class="headerlink" href="#the-coolant-confitioning" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Coolant conditionning</strong></p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text"><img alt="" src="_images/MO_Inst_CCS.png" /></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<ul class="simple">
+<li><p class="card-text">Start the conditioning</p>
+<ul>
+<li><p class="card-text">When started, different setpoint are take into account</p></li>
+</ul>
+</li>
+<li><p class="card-text">Stop the conditioning</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-climatic-chamber">
+<h3>The climatic chamber<a class="headerlink" href="#the-climatic-chamber" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Climatic Chamber</strong></p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<p class="card-text"><img alt="" src="_images/MO_Inst_CCHAS.png" /></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-body docutils">
+<ul class="simple">
+<li><p class="card-text">Measurement</p></li>
+<li><p class="card-text">Set point</p></li>
+<li><p class="card-text">Status</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>In the master instance, on every slot, you can see the setpoint arriving from the instance and the measurement going back;
+<img alt="" src="_images/MO_Slot_A.png" /></p>
+</div>
 </div>
 </div>
 </div>
@@ -473,19 +486,12 @@ To make instance independent and use same component, following best practices co
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="01_General-presentation.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="05_SCALE_Battery-configuration.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">General presentation</p>
+            <p class="prev-next-title">Runtime configuration</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="03_First-Installation.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">First Installation</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             

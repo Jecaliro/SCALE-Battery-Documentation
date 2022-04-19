@@ -66,7 +66,7 @@ Possibility is given, in one side from the hardware, and in the other side from 
 
 ## Software architecture
 
-Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic...), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in [MORPHEE® multi-instance](Multi-Instance.ipynb) chapter.
+Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic...), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in [MORPHEE® multi-instance](02_Multi-Instance.md) chapter.
 
 ![](./images/Battery_Concept.png)
 

@@ -4,7 +4,7 @@
 
 > *Essential element of new transportation area, batteries are key part of the energy transition. In constant evolution, battery testing has to be innovative and reactive!*
  
- SCALE Battery (**S**tandard and **C**onfigurable **A**pplication for **L**aboratory **E**nvirronment) is a MORPHEE application for battery test cells. It allows to perform test on: 
+ SCALE Battery (**S**tandard and **C**onfigurable **A**pplication for **L**aboratory **E**nvirronment) is a MORPHEE® application for battery test cells. It allows to perform test on: 
 * Cells,
 * Module
 * Pack.
