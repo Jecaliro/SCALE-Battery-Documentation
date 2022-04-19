@@ -85,7 +85,7 @@
         
 
 \title{Battery Application}
-\date{Apr 15, 2022}
+\date{Apr 19, 2022}
 \release{}
 \author{FEV Documentation Team}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -424,7 +424,7 @@ Possibility is given, in one side from the hardware, and in the other side from 
 \section{Software architecture}
 \label{\detokenize{01_General-presentation:software-architecture}}
 \sphinxAtStartPar
-Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic…), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in \DUrole{xref,myst}{MORPHEE® multi\sphinxhyphen{}instance} chapter.
+Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic…), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in {\hyperref[\detokenize{02_Multi-Instance::doc}]{\sphinxcrossref{\DUrole{doc,std,std-doc}{MORPHEE® multi\sphinxhyphen{}instance}}}} chapter.
 
 \sphinxAtStartPar
 \sphinxincludegraphics{{Battery_Concept}.png}
@@ -917,14 +917,15 @@ Nevertheless, it will be possible to test all equipement one by one when it will
 \sphinxAtStartPar
 Concept of the SCALE Battery configuration is to use most of the equipement in the master instance and to give the possibility for each instance to attach to one (or more) equipement through ‘Sharing’ components;
 
-\sphinxAtStartPar
-\sphinxincludegraphics{{Battery_Concept}.png}
+\begin{sphinxuseclass}{full-width}
+\noindent\sphinxincludegraphics{{Battery_Concept}.png}
 
+\end{sphinxuseclass}
 \sphinxAtStartPar
 The Sharing equipements take care of all present equipement of the familly;
 
 \sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING:
+ENERGY\_SYSTEM\_SHARING
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -977,7 +978,7 @@ Description
 \\
 \hline
 \sphinxAtStartPar
-MANAGEMENT
+\sphinxstylestrong{MANAGEMENT}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -993,7 +994,7 @@ Global management of all SCALE and non SCALE component in the configuration. Mus
 \\
 \hline
 \sphinxAtStartPar
-CONTROL\_MANAGEMENT.BATTERY
+\sphinxstylestrong{CONTROL\_MANAGEMENT.BATTERY}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1009,7 +1010,7 @@ Management of the different control mode for battery;
 \\
 \hline
 \sphinxAtStartPar
-MEASUREMENT\_MANAGEMENT.BATTERY
+\sphinxstylestrong{MEASUREMENT\_MANAGEMENT.BATTERY}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1025,7 +1026,7 @@ Management of acquisition for battery;
 \\
 \hline
 \sphinxAtStartPar
-MULTIINSTANCE\_MANAGEMENT
+\sphinxstylestrong{MULTIINSTANCE\_MANAGEMENT}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1041,7 +1042,7 @@ Handling of the configuration (see below) and instances
 \\
 \hline
 \sphinxAtStartPar
-ACQUISITION
+\sphinxstylestrong{ACQUISITION}
 &
 \sphinxAtStartPar
 
@@ -1057,7 +1058,7 @@ Component for “normed name” customer channels. This is the main place to def
 \\
 \hline
 \sphinxAtStartPar
-HARDWARE
+\sphinxstylestrong{HARDWARE}
 &
 \sphinxAtStartPar
 
@@ -1073,7 +1074,7 @@ Component to place hardware channels of the configuration. Act as a simple passi
 \\
 \hline
 \sphinxAtStartPar
-Customer specific component
+\sphinxstyleemphasis{\sphinxstylestrong{Customer specific component}}
 &
 \sphinxAtStartPar
 
@@ -1089,7 +1090,7 @@ All needed component for customer configuration, such as; PLC Barcode Various in
 \\
 \hline
 \sphinxAtStartPar
-BMS
+\sphinxstylestrong{BMS}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1105,7 +1106,7 @@ Communication with the battery BMS, adressed either in CAN or FDX protocol. Fram
 \\
 \hline
 \sphinxAtStartPar
-DUT
+\sphinxstylestrong{DUT}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1121,7 +1122,7 @@ DUT description. Frame given by SCALE architecture, but possibility to ADD new p
 \\
 \hline
 \sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING
+\sphinxstylestrong{ENERGY\_SYSTEM\_SHARING}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1137,7 +1138,7 @@ Management of different ENERGY\_SYSTEM; In link with the instance In regards to 
 \\
 \hline
 \sphinxAtStartPar
-ENERGY\_SYSTEM\_X
+\sphinxstylestrong{ENERGY\_SYSTEM\_X}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1153,7 +1154,7 @@ SCALE energy system devices
 \\
 \hline
 \sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING
+\sphinxstylestrong{CLIMATIC\_CHAMBER\_SHARING}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1169,7 +1170,7 @@ Management of different CLIMATIC\_CHAMBER; In link with the instance In regards 
 \\
 \hline
 \sphinxAtStartPar
-CLIMATIC\_CHAMBER\_X
+\sphinxstylestrong{CLIMATIC\_CHAMBER\_X}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1185,7 +1186,7 @@ SCALE climatic chamber devices
 \\
 \hline
 \sphinxAtStartPar
-COOLAND\_COND\_SHARING
+\sphinxstylestrong{COOLAND\_COND\_SHARING}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1201,7 +1202,7 @@ Management of different COOLAND\_COND; In link with the instance In regards to c
 \\
 \hline
 \sphinxAtStartPar
-COOLAND\_COND\_X
+\sphinxstylestrong{COOLAND\_COND\_X}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1217,7 +1218,7 @@ SCALE coolant conditionning devices
 \\
 \hline
 \sphinxAtStartPar
-SCADA\_CLIENT\_MASTER
+\sphinxstyleemphasis{\sphinxstylestrong{SCADA\_CLIENT\_MASTER}}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1233,7 +1234,7 @@ Can be used only with SCADA
 \\
 \hline
 \sphinxAtStartPar
-SCADA\_CLIENT\_INSTANCE
+\sphinxstyleemphasis{\sphinxstylestrong{SCADA\_CLIENT\_INSTANCE}}
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{SCALE}
@@ -1246,6 +1247,22 @@ SCADA\_CLIENT\_INSTANCE
 &
 \sphinxAtStartPar
 Can be used only with SCADA
+\\
+\hline
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
 \\
 \hline
 \end{tabulary}
@@ -1386,6 +1403,10 @@ COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
 COOLANT\_COND\_1.SIMULATION
 \\
 \hline
+\sphinxAtStartPar
+
+\\
+\hline
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
@@ -1519,6 +1540,16 @@ COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
 \hline
 \sphinxAtStartPar
 COOLANT\_COND\_1.SIMULATION
+&
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
+\\
+\hline
+\sphinxAtStartPar
+
 &
 \sphinxAtStartPar
 
@@ -1604,6 +1635,10 @@ COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
 COOLANT\_COND\_1.\sphinxstyleemphasis{Real device}
 \\
 \hline
+\sphinxAtStartPar
+
+\\
+\hline
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
@@ -1620,11 +1655,8 @@ We recommend, for the first start, to use the simulated components and to limit 
 When you have reach this point, you are ready to start SCALE Battery master instance.
 
 \sphinxAtStartPar
-When starting MORPHEE , you should see:
+You should see:
 \sphinxincludegraphics{{MO_Main_Screen}.png}
-
-\sphinxAtStartPar
-If you succeed, \sphinxstylestrong{CONGRATULATIONS}
 
 
 \chapter{Runtime configuration}
@@ -1643,6 +1675,9 @@ Main Dashboard can be modified in the Bench configuration. By default, it displa
 \sphinxAtStartPar
 \sphinxincludegraphics{{MO_Main_Screen_commented}.png}
 
+
+\subsection{Slots configuration}
+\label{\detokenize{05_SCALE_Battery-configuration:slots-configuration}}
 \sphinxAtStartPar
 You can modify the configuration by pushing the ‘Edit configuration’ button.
 
@@ -1653,7 +1688,7 @@ You can modify the configuration by pushing the ‘Edit configuration’ button.
 It will display all the Slot and you will be able to modify each slot configuration.
 
 
-\section{Channel affectation}
+\subsection{Channel affectation}
 \label{\detokenize{05_SCALE_Battery-configuration:channel-affectation}}
 \sphinxAtStartPar
 You can select the channels you want to affect to the Slot.
@@ -1706,6 +1741,13 @@ Channel 4
 \\
 \hline
 \sphinxAtStartPar
+Slot 5
+&
+\sphinxAtStartPar
+Channel 5
+\\
+\hline
+\sphinxAtStartPar
 …
 &
 \sphinxAtStartPar
@@ -1717,6 +1759,13 @@ Slot X
 &
 \sphinxAtStartPar
 Channel X
+\\
+\hline
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
 \\
 \hline
 \end{tabulary}
@@ -1757,11 +1806,18 @@ Slot 2
 Slot 3
 &
 \sphinxAtStartPar
-Channel 3 + Channel 4
+Channel 3 + Channel 4 + Channel 5
 \\
 \hline
 \sphinxAtStartPar
 Slot 4
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{No more available}
+\\
+\hline
+\sphinxAtStartPar
+Slot 5
 &
 \sphinxAtStartPar
 \sphinxstyleemphasis{No more available}
@@ -1781,66 +1837,11 @@ Slot X
 Channel X
 \\
 \hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
+\sphinxAtStartPar
 
+&
 \sphinxAtStartPar
-or
 
-
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|T|}
-\hline
-\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Slot
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Electric Channel
-\\
-\hline
-\sphinxAtStartPar
-Slot 1
-&
-\sphinxAtStartPar
-Channel 1 + Channel 2 + Channel 3
-\\
-\hline
-\sphinxAtStartPar
-Slot 2
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{No more available}
-\\
-\hline
-\sphinxAtStartPar
-Slot 3
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{No more available}
-\\
-\hline
-\sphinxAtStartPar
-Slot 4
-&
-\sphinxAtStartPar
-Channel 4
-\\
-\hline
-\sphinxAtStartPar
-…
-&
-\sphinxAtStartPar
-…
-\\
-\hline
-\sphinxAtStartPar
-Slot X
-&
-\sphinxAtStartPar
-Channel X
 \\
 \hline
 \end{tabulary}
@@ -1879,6 +1880,16 @@ Two channels (if possible)
 \sphinxincludegraphics{{MO_Cfg_Channel_2}.png}
 \\
 \hline
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
+&
+\sphinxAtStartPar
+
+\\
+\hline
 \end{tabulary}
 \par
 \sphinxattableend\end{savenotes}
@@ -1889,498 +1900,53 @@ If a channel is used by a slot, it is not anymore available for the next slot.
 \end{sphinxadmonition}
 
 
-\subsection{Definition}
-\label{\detokenize{05_SCALE_Battery-configuration:definition}}
+\subsection{Climatic chamber selection}
+\label{\detokenize{05_SCALE_Battery-configuration:climatic-chamber-selection}}
 \sphinxAtStartPar
-Component role are defined below:
-
-\begin{sphinxuseclass}{full-width}
-
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|T|T|}
-\hline
-\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Component
-&
-\sphinxAtStartPar
-
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Master
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Inst.
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Description
-\\
-\hline
-\sphinxAtStartPar
-MANAGEMENT
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Global management of all SCALE and non SCALE component in the configuration. Must be in all configuration
-\\
-\hline
-\sphinxAtStartPar
-CONTROL\_MANAGEMENT.BATTERY
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Management of the different control mode for battery;
-\\
-\hline
-\sphinxAtStartPar
-MEASUREMENT\_MANAGEMENT.BATTERY
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Management of acquisition for battery;
-\\
-\hline
-\sphinxAtStartPar
-MULTIINSTANCE\_MANAGEMENT
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-Handling of the configuration (see below) and instances
-\\
-\hline
-\sphinxAtStartPar
-ACQUISITION
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-(\sphinxstylestrong{X})
-&
-\sphinxAtStartPar
-Component for “normed name” customer channels. This is the main place to define: Link to hardware channel Securities Calculation Acquisition plan
-\\
-\hline
-\sphinxAtStartPar
-HARDWARE
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-Component to place hardware channels of the configuration. Act as a simple passive component to concentrate acquisition channels.
-\\
-\hline
-\sphinxAtStartPar
-Customer specific component
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-(\sphinxstylestrong{X})
-&
-\sphinxAtStartPar
-All needed component for customer configuration, such as; PLC Barcode Various interface …
-\\
-\hline
-\sphinxAtStartPar
-BMS
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Communication with the battery BMS, adressed either in CAN or FDX protocol. Frame given by SCALE architecture, but possibility to ADD new methods and channels if there is a need to add customer specific command (father method)
-\\
-\hline
-\sphinxAtStartPar
-DUT
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-DUT description. Frame given by SCALE architecture, but possibility to ADD new parameters if needed.
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-.MASTER
-&
-\sphinxAtStartPar
-.SLAVE
-&
-\sphinxAtStartPar
-Management of different ENERGY\_SYSTEM; In link with the instance In regards to configuration
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_X
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-SCALE energy system devices
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-.MASTER
-&
-\sphinxAtStartPar
-.SLAVE
-&
-\sphinxAtStartPar
-Management of different CLIMATIC\_CHAMBER; In link with the instance In regards to configuration
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_X
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-SCALE climatic chamber devices
-\\
-\hline
-\sphinxAtStartPar
-COOLAND\_COND\_SHARING
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-.MASTER
-&
-\sphinxAtStartPar
-.SLAVE
-&
-\sphinxAtStartPar
-Management of different COOLAND\_COND; In link with the instance In regards to configuration
-\\
-\hline
-\sphinxAtStartPar
-COOLAND\_COND\_X
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-SCALE coolant conditionning devices
-\\
-\hline
-\sphinxAtStartPar
-SCADA\_CLIENT\_MASTER
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-Can be used only with SCADA
-\\
-\hline
-\sphinxAtStartPar
-SCADA\_CLIENT\_INSTANCE
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Can be used only with SCADA
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
-
-\end{sphinxuseclass}
-
-\subsection{Configuration in UEditor}
-\label{\detokenize{05_SCALE_Battery-configuration:configuration-in-ueditor}}
-\sphinxAtStartPar
-Here is an example of a standard Bench configuration;
+When you have affected a channel, you can precise if the slot is in a climatic chamber, and if yes, in which one;
 
 \sphinxAtStartPar
-\sphinxincludegraphics{{UEditor_Bench_config}.png}
-
-\begin{sphinxadmonition}{hint}{Hint:}
-\sphinxAtStartPar
-To avoid re\sphinxhyphen{}design of the Dashborad, it makes sense to always use all equipement in the Bench configuration and make the link ‘Optional’ if they are not used;
+\sphinxincludegraphics{{MO_Cfg_D}.png}
 
 \sphinxAtStartPar
-\sphinxincludegraphics{{UEditor_Link_Optionnal}.png}
-\end{sphinxadmonition}
-
-
-\subsection{MultiInstance configuration}
-\label{\detokenize{05_SCALE_Battery-configuration:multiinstance-configuration}}
-\sphinxAtStartPar
-Before starting, you need also to configure the MULTIINSTANCE\_MANAGEMENT component:
+The list of Climatic chamber depends on the configuration:
 
 \sphinxAtStartPar
-\sphinxincludegraphics{{UEditor_MM_Configuration}.png}
+\sphinxincludegraphics{{MO_Cfg_Clim}.png}
+
+
+\subsection{Cooling system selection}
+\label{\detokenize{05_SCALE_Battery-configuration:cooling-system-selection}}
+\sphinxAtStartPar
+If battery is using a cooling system, it can also be defined here;
 
 \sphinxAtStartPar
-By default, you can configure as follow;
+\sphinxincludegraphics{{MO_Cfg_C}.png}
+
+\sphinxAtStartPar
+The list of Coolant conditionning circuit appears in the list:
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{MO_Cfg_Cooling}.png}
+
+
+\section{Climatic chamber sharing}
+\label{\detokenize{05_SCALE_Battery-configuration:climatic-chamber-sharing}}
+\sphinxAtStartPar
+As it is possible to have several slots inside the same climatic chamber, it is necessary to describe how the system will react if different setpoint arrives in the master;
+
+\sphinxAtStartPar
+\sphinxincludegraphics{{MO_Cfg_Clim_sharing}.png}
+
+\sphinxAtStartPar
+The possibilities are:
 
 
 \begin{savenotes}\sphinxattablestart
 \centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\begin{tabulary}{\linewidth}[t]{|T|T|}
 \hline
-\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Parameter
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Description
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Value
-\\
-\hline
-\sphinxAtStartPar
-P\_MIM.NB\_INSTANCES
-&
-\sphinxAtStartPar
-Quantity of MORPHEE Instance
-&
-\sphinxAtStartPar
-8
-\\
-\hline
-\sphinxAtStartPar
-P\_MIM.DATA\_HANDLING
-&
-\sphinxAtStartPar
-Management of parameters
-&
-\sphinxAtStartPar
-By MORPHEE
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
 
-
-\subsection{Configuration without any hardware}
-\label{\detokenize{05_SCALE_Battery-configuration:configuration-without-any-hardware}}
-\sphinxAtStartPar
-Example of Configuration without any hardware and simulated components:
-
-
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|}
-\hline
-\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Master configuration (In Bench cfg)
-\\
-\hline
-\sphinxAtStartPar
-MANAGEMENT
-\\
-\hline
-\sphinxAtStartPar
-MULTIINSTANCE\_MANAGEMENT
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_1.SIMU\_BASIC
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_2.SIMU\_BASIC
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_3.SIMU\_BASIC
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_4.SIMU\_BASIC
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_1.SIMULATION
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_2.SIMULATION
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_1.SIMULATION
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
-
-\begin{sphinxuseclass}{full-width}
-
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|}
-\hline
-\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Master configuration (In Bench cfg)
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Instance 1 configuration (In Test cfg)
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Instance n configuration (In Test cfg)
-\\
-\hline
-\sphinxAtStartPar
-MANAGEMENT
-&
-\sphinxAtStartPar
-MANAGEMENT
-&
-\sphinxAtStartPar
-MANAGEMENT
-\\
-\hline
-\sphinxAtStartPar
-MULTIINSTANCE\_MANAGEMENT
-&
-\sphinxAtStartPar
-CONTROL\_MANAGEMENT.BATTERY
-&
-\sphinxAtStartPar
-CONTROL\_MANAGEMENT.BATTERY
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-&
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-&
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_1.SIMU\_BASIC
-&
 \sphinxAtStartPar
 
 &
@@ -2389,78 +1955,33 @@ ENERGY\_SYSTEM\_1.SIMU\_BASIC
 \\
 \hline
 \sphinxAtStartPar
-ENERGY\_SYSTEM\_2.SIMU\_BASIC
+\sphinxstylestrong{Managed by master only}
 &
 \sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
+The temperature setpoint is managed by the master. Every test from instances, even if sending a setpoint, will not be taken into account
 \\
 \hline
 \sphinxAtStartPar
-ENERGY\_SYSTEM\_3.SIMU\_BASIC
+\sphinxstylestrong{Last T°C value received}
 &
 \sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
+The last temperature received will be applied, wherever and whenever it arrives.
 \\
 \hline
 \sphinxAtStartPar
-ENERGY\_SYSTEM\_4.SIMU\_BASIC
+\sphinxstylestrong{Synchronized on T°C}
 &
 \sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
+Wait that all runing instances send the same setpoint to apply it.  All the test on the different instances will be on hold as long as setpoint is not applyed.
 \\
 \hline
 \sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
+\sphinxstylestrong{Handled by instance \sphinxstyleemphasis{X}}
 &
 \sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-&
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
+Only setpoint coming from Instance \sphinxstyleemphasis{\sphinxstylestrong{X}} will be applied.
 \\
 \hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_1.SIMULATION
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_2.SIMULATION
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-&
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-&
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_1.SIMULATION
-&
 \sphinxAtStartPar
 
 &
@@ -2472,759 +1993,368 @@ COOLANT\_COND\_1.SIMULATION
 \par
 \sphinxattableend\end{savenotes}
 
-\end{sphinxuseclass}
-\begin{sphinxadmonition}{note}{Note:}
-\sphinxAtStartPar
-All component existing in your configuration but not present in this table can be put as ‘Optional’
-\end{sphinxadmonition}
 
-
-\subsection{Configuration with hardware}
-\label{\detokenize{05_SCALE_Battery-configuration:configuration-with-hardware}}
+\section{Energy System sharing}
+\label{\detokenize{05_SCALE_Battery-configuration:energy-system-sharing}}
 \sphinxAtStartPar
-The configuration with hardware is not so different. You just have to replace ‘Simulated’ equipments with real one, and add your own component if needed (Acquisition, Hardware, etc…).
+The Energy System Sharing window will display actual configuration with available slots:
 
 \sphinxAtStartPar
-The table below is not exhaustive but show the configuration concept by using hardware:
-
-
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|}
-\hline
-\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Master configuration (In Bench cfg)
-\\
-\hline
-\sphinxAtStartPar
-MANAGEMENT
-\\
-\hline
-\sphinxAtStartPar
-MULTIINSTANCE\_MANAGEMENT
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_1.\sphinxstyleemphasis{Real device}
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_2.\sphinxstyleemphasis{Real device}
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_3.\sphinxstyleemphasis{Real device}
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_4.\sphinxstyleemphasis{Real device}
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_1.\sphinxstyleemphasis{Real device}
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_2.\sphinxstyleemphasis{Real device}
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_1.\sphinxstyleemphasis{Real device}
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
-
-
-\section{First start}
-\label{\detokenize{05_SCALE_Battery-configuration:first-start}}
-\begin{sphinxadmonition}{hint}{Hint:}
-\sphinxAtStartPar
-We recommend, for the first start, to use the simulated components and to limit the number of instances.
-\end{sphinxadmonition}
+\sphinxincludegraphics{{MO_Cfg_Energy_sharing}.png}
 
 \sphinxAtStartPar
-When you have reach this point, you are ready to start SCALE Battery master instance.
-
+For every Energy System used in the {\hyperref[\detokenize{04_Base-configuration::doc}]{\sphinxcrossref{\DUrole{doc,std,std-doc}{configuration}}}}, it will display:
+\begin{itemize}
+\item {} 
 \sphinxAtStartPar
-When starting MORPHEE , you should see:
-\sphinxincludegraphics{{MO_Main_Screen}.png}
+Name of the component
 
+\item {} 
 \sphinxAtStartPar
-If you succeed, \sphinxstylestrong{CONGRATULATIONS}
+Number of channels in this component
+
+\end{itemize}
 
 
 \part{Utilization}
 
 
-\chapter{SCALE Battery Concept}
-\label{\detokenize{10_SCALE-Battery-Concept:scale-battery-concept}}\label{\detokenize{10_SCALE-Battery-Concept::doc}}
+\chapter{Starting an Instance}
+\label{\detokenize{06_Starting_An_instance:starting-an-instance}}\label{\detokenize{06_Starting_An_instance::doc}}
 
-\section{Concept}
-\label{\detokenize{10_SCALE-Battery-Concept:concept}}
+\section{The first start}
+\label{\detokenize{06_Starting_An_instance:the-first-start}}
 \sphinxAtStartPar
-Software architecture is based in one hand, on a master application managing most Devices, and on another hand, on several procedure executing the test (call instances);
-
-
+When your configuration is complete, you are ready to start your first instance. By default, you should see some battery description and at least one basic test (EMPTY\_TEST\_NEWCMA):
 
 \sphinxAtStartPar
-Objective is to keep all instances as identical as possible. Only some interfaces can change;
+\sphinxincludegraphics{{MO_Inst_First_start}.png}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Select a battery definition
+
+\item {} 
+\sphinxAtStartPar
+Select the test: EMPTY\_TEST
+
+\item {} 
+\sphinxAtStartPar
+Push the ‘PLAY BUTTON’
+
+\end{enumerate}
+
+\sphinxAtStartPar
+This should result in:
+\sphinxincludegraphics{{MO_Inst_Main_screen}.png}
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-BMS
+In the top left, you should see the instance number
 
 \item {} 
 \sphinxAtStartPar
-Specif devices.
+On main screen:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+The control Management interface
+
+\item {} 
+\sphinxAtStartPar
+The coolant conditioning interface
+
+\item {} 
+\sphinxAtStartPar
+The climatic chamber interface
 
 \end{itemize}
 
-\sphinxAtStartPar
-A specific configuration (hardware connexion) can also be done for every instance.
+\end{itemize}
 
 
-\section{Configuration}
-\label{\detokenize{10_SCALE-Battery-Concept:configuration}}
+\section{Testing the functionnalities}
+\label{\detokenize{06_Starting_An_instance:testing-the-functionnalities}}
 
-\subsection{Component role}
-\label{\detokenize{10_SCALE-Battery-Concept:component-role}}
+\subsection{The Control Management}
+\label{\detokenize{06_Starting_An_instance:the-control-management}}
 \sphinxAtStartPar
-Quick overview of component role:
+Once the instance started, you should \sphinxstylestrong{PREPARE} the different component. For this, push the \sphinxstylestrong{PREPARE} button on the top right.
 
-\begin{sphinxuseclass}{full-width}
+\sphinxAtStartPar
+When prepared, you are ready to send commands to the related \sphinxstylestrong{ENERGY\_SYSTEM}
 
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|T|T|}
-\hline
-\sphinxstyletheadfamily 
+\begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
-Component
-&
-\sphinxAtStartPar
+\sphinxstylestrong{Control Management}
 
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Master
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Inst.
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Description
-\\
-\hline
-\sphinxAtStartPar
-MANAGEMENT
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Global management of all SCALE and non SCALE component in the configuration. Must be in all configuration
-\\
-\hline
-\sphinxAtStartPar
-CONTROL\_MANAGEMENT.BATTERY
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Management of the different control mode for battery;
-\\
-\hline
-\sphinxAtStartPar
-MEASUREMENT\_MANAGEMENT.BATTERY
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Management of acquisition for battery;
-\\
-\hline
-\sphinxAtStartPar
-MULTIINSTANCE\_MANAGEMENT
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-Handling of the configuration (see below) and instances
-\\
-\hline
-\sphinxAtStartPar
-ACQUISITION
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-(\sphinxstylestrong{X})
-&
-\sphinxAtStartPar
-Component for “normed name” customer channels. This is the main place to define: Link to hardware channel Securities Calculation Acquisition plan
-\\
-\hline
-\sphinxAtStartPar
-HARDWARE
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-Component to place hardware channels of the configuration. Act as a simple passive component to concentrate acquisition channels.
-\\
-\hline
-\sphinxAtStartPar
-Customer specific component
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-(\sphinxstylestrong{X})
-&
-\sphinxAtStartPar
-All needed component for customer configuration, such as; PLC Barcode Various interface …
-\\
-\hline
-\sphinxAtStartPar
-BMS
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Communication with the battery BMS, adressed either in CAN or FDX protocol. Frame given by SCALE architecture, but possibility to ADD new methods and channels if there is a need to add customer specific command (father method)
-\\
-\hline
-\sphinxAtStartPar
-DUT
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-DUT description. Frame given by SCALE architecture, but possibility to ADD new parameters if needed.
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-.MASTER
-&
-\sphinxAtStartPar
-.SLAVE
-&
-\sphinxAtStartPar
-Management of different ENERGY\_SYSTEM; In link with the instance In regards to configuration
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_X
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-SCALE energy system devices
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-.MASTER
-&
-\sphinxAtStartPar
-.SLAVE
-&
-\sphinxAtStartPar
-Management of different CLIMATIC\_CHAMBER; In link with the instance In regards to configuration
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_X
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-SCALE climatic chamber devices
-\\
-\hline
-\sphinxAtStartPar
-COOLAND\_COND\_SHARING
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-.MASTER
-&
-\sphinxAtStartPar
-.SLAVE
-&
-\sphinxAtStartPar
-Management of different COOLAND\_COND; In link with the instance In regards to configuration
-\\
-\hline
-\sphinxAtStartPar
-COOLAND\_COND\_X
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-SCALE coolant conditionning devices
-\\
-\hline
-\sphinxAtStartPar
-SCADA\_CLIENT\_MASTER
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-Can be used only with SCADA
-\\
-\hline
-\sphinxAtStartPar
-SCADA\_CLIENT\_INSTANCE
-&
-\sphinxAtStartPar
-\sphinxstyleemphasis{SCALE}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Can be used only with SCADA
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
+\begin{sphinxuseclass}{sphinx-bs}
+\begin{sphinxuseclass}{container}
+\begin{sphinxuseclass}{pb-4}
+\begin{sphinxuseclass}{row}
+\begin{sphinxuseclass}{d-flex}
+\begin{sphinxuseclass}{col-lg-6}
+\begin{sphinxuseclass}{col-md-6}
+\begin{sphinxuseclass}{col-sm-6}
+\begin{sphinxuseclass}{col-xs-12}
+\begin{sphinxuseclass}{p-2}
+\begin{sphinxuseclass}{card}
+\begin{sphinxuseclass}{w-100}
+\begin{sphinxuseclass}{shadow}
+\begin{sphinxuseclass}{card-body}
+\sphinxAtStartPar
+\sphinxincludegraphics{{MO_Inst_CMA}.png}
 
 \end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{d-flex}
+\begin{sphinxuseclass}{col-lg-6}
+\begin{sphinxuseclass}{col-md-6}
+\begin{sphinxuseclass}{col-sm-6}
+\begin{sphinxuseclass}{col-xs-12}
+\begin{sphinxuseclass}{p-2}
+\begin{sphinxuseclass}{card}
+\begin{sphinxuseclass}{w-100}
+\begin{sphinxuseclass}{shadow}
+\begin{sphinxuseclass}{card-body}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+States:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Rest}: Battery is in Idle mode
 
-\subsection{Hardware Configuration}
-\label{\detokenize{10_SCALE-Battery-Concept:hardware-configuration}}
+\item {} 
 \sphinxAtStartPar
-Hardware configuration is not different when you have one instance that when you have several instances.
+\sphinxstylestrong{Current}: Battery is in Current mode
 
+\item {} 
 \sphinxAtStartPar
-Just note that some MORPHEE® features are multi\sphinxhyphen{}instances compliant and some others not;
+\sphinxstylestrong{Volatge}: Battery is in Voltage mode
 
-\begin{sphinxuseclass}{full-width}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Power}: Battery is in Power mode
 
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|}
-\hline
-\sphinxstyletheadfamily 
+\item {} 
 \sphinxAtStartPar
-Feature
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Multi\sphinxhyphen{}Instance Compatibility
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Remark
-\\
-\hline
-\sphinxAtStartPar
-Advanced >> ECU Connexion
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
+\sphinxstyleemphasis{Each button will select the related mode}
 
-\\
-\hline
-\sphinxAtStartPar
-Communication >> CAN
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
-Possibility to use one CAN channel from one board in one instance and another CAN channel from same board in another instance
-\\
-\hline
-\sphinxAtStartPar
-Communication >> Custom (CSM)
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
+\end{itemize}
 
-\\
-\hline
+\item {} 
 \sphinxAtStartPar
-Communication >> EtherCat
-&
+When the mode is set:
+\begin{itemize}
+\item {} 
 \sphinxAtStartPar
+Setpoint can be send through S\_CMA.\sphinxstylestrong{f}\_SET (where \sphinxstylestrong{f} is either I, V or P)
 
-&
+\item {} 
 \sphinxAtStartPar
-To share Channels between instance, please have a look to Software Configuration
-\\
-\hline
-\sphinxAtStartPar
-Communication >> Ethernet (SLINK)
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
+Measurement are read in R\_CMA.\sphinxstylestrong{f}\_ACT (where \sphinxstylestrong{f} is either I, V or P)
 
-\\
-\hline
-\sphinxAtStartPar
-Communication >> \sphinxstylestrong{F}ast \sphinxstylestrong{D}ata E\sphinxstylestrong{X}change (\sphinxstylestrong{FDX})
-&
-\sphinxAtStartPar
-\sphinxstylestrong{X}
-&
-\sphinxAtStartPar
+\end{itemize}
 
-\\
-\hline
+\item {} 
 \sphinxAtStartPar
-Communication >> OBD
-&
+Integrated function:
+\begin{itemize}
+\item {} 
 \sphinxAtStartPar
-?
-&
-\sphinxAtStartPar
+SET\_CC: Integrated command to send current setpoint with voltage and duration limit.
 
-\\
-\hline
+\item {} 
 \sphinxAtStartPar
-Communication >> PFB
-&
-\sphinxAtStartPar
-?
-&
-\sphinxAtStartPar
+SET\_CV: Integrated command to send voltage setpoint with current and duration limit.
 
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
+\item {} 
+\sphinxAtStartPar
+SET\_CP: Integrated command to send power setpoint with voltage and duration limit.
+
+\end{itemize}
+
+\end{itemize}
 
 \end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
 
-\subsection{Software configuration}
-\label{\detokenize{10_SCALE-Battery-Concept:software-configuration}}
 
-\subsubsection{Master and Instance configuration}
-\label{\detokenize{10_SCALE-Battery-Concept:master-and-instance-configuration}}
-\begin{sphinxuseclass}{full-width}
+\subsection{The coolant confitioning}
+\label{\detokenize{06_Starting_An_instance:the-coolant-confitioning}}
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+\sphinxstylestrong{Coolant conditionning}
 
-\begin{savenotes}\sphinxattablestart
-\centering
-\begin{tabulary}{\linewidth}[t]{|T|T|T|}
-\hline
-\sphinxstyletheadfamily 
+\begin{sphinxuseclass}{sphinx-bs}
+\begin{sphinxuseclass}{container}
+\begin{sphinxuseclass}{pb-4}
+\begin{sphinxuseclass}{row}
+\begin{sphinxuseclass}{d-flex}
+\begin{sphinxuseclass}{col-lg-6}
+\begin{sphinxuseclass}{col-md-6}
+\begin{sphinxuseclass}{col-sm-6}
+\begin{sphinxuseclass}{col-xs-12}
+\begin{sphinxuseclass}{p-2}
+\begin{sphinxuseclass}{card}
+\begin{sphinxuseclass}{w-100}
+\begin{sphinxuseclass}{shadow}
+\begin{sphinxuseclass}{card-body}
 \sphinxAtStartPar
-Master configuration (In Bench cfg)
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Instance 1 configuration (In Test cfg)
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Instance n configuration (In Test cfg)
-\\
-\hline
-\sphinxAtStartPar
-MANAGEMENT
-&
-\sphinxAtStartPar
-MANAGEMENT
-&
-\sphinxAtStartPar
-MANAGEMENT
-\\
-\hline
-\sphinxAtStartPar
-MULTIINSTANCE\_MANAGEMENT
-&
-\sphinxAtStartPar
-CONTROL\_MANAGEMENT
-&
-\sphinxAtStartPar
-CONTROL\_MANAGEMENT
-\\
-\hline
-\sphinxAtStartPar
-HARDWARE (\sphinxstyleemphasis{Specific})
-&
-\sphinxAtStartPar
-MEASUREMENT\_MANAGEMENT.BATTERY
-&
-\sphinxAtStartPar
-MEASUREMENT\_MANAGEMENT.BATTERY
-\\
-\hline
-\sphinxAtStartPar
-ACQUISITION (Global)
-&
-\sphinxAtStartPar
-ACQUISITION (for instance)
-&
-\sphinxAtStartPar
-ACQUISITION (for instance)
-\\
-\hline
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-DUT
-&
-\sphinxAtStartPar
-DUT
-\\
-\hline
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-BMS
-&
-\sphinxAtStartPar
-BMS
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-&
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-&
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_1.\sphinxstyleemphasis{\{real device\}}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-…
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-ENERGY\_SYSTEM\_\sphinxstylestrong{X}.\sphinxstyleemphasis{\{real device\}}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-&
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-&
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_1.\sphinxstyleemphasis{\{real device\}}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-…
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-CLIMATIC\_CHAMBER\_\sphinxstylestrong{X}.\sphinxstyleemphasis{\{real device\}}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{MASTER}}
-&
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-&
-\sphinxAtStartPar
-COOLANT\_COND\_SHARING.\sphinxstyleemphasis{\sphinxstylestrong{SLAVE}}
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_1.\sphinxstyleemphasis{\{real device\}}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-…
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\sphinxAtStartPar
-COOLANT\_COND\_\sphinxstylestrong{X}.\sphinxstyleemphasis{\{real device\}}
-&
-\sphinxAtStartPar
-
-&
-\sphinxAtStartPar
-
-\\
-\hline
-\end{tabulary}
-\par
-\sphinxattableend\end{savenotes}
+\sphinxincludegraphics{{MO_Inst_CCS}.png}
 
 \end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{d-flex}
+\begin{sphinxuseclass}{col-lg-6}
+\begin{sphinxuseclass}{col-md-6}
+\begin{sphinxuseclass}{col-sm-6}
+\begin{sphinxuseclass}{col-xs-12}
+\begin{sphinxuseclass}{p-2}
+\begin{sphinxuseclass}{card}
+\begin{sphinxuseclass}{w-100}
+\begin{sphinxuseclass}{shadow}
+\begin{sphinxuseclass}{card-body}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Start the conditioning
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+When started, different setpoint are take into account
+
+\end{itemize}
+
+\item {} 
+\sphinxAtStartPar
+Stop the conditioning
+
+\end{itemize}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
+
+
+\subsection{The climatic chamber}
+\label{\detokenize{06_Starting_An_instance:the-climatic-chamber}}
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxAtStartPar
+\sphinxstylestrong{Climatic Chamber}
+
+\begin{sphinxuseclass}{sphinx-bs}
+\begin{sphinxuseclass}{container}
+\begin{sphinxuseclass}{pb-4}
+\begin{sphinxuseclass}{row}
+\begin{sphinxuseclass}{d-flex}
+\begin{sphinxuseclass}{col-lg-6}
+\begin{sphinxuseclass}{col-md-6}
+\begin{sphinxuseclass}{col-sm-6}
+\begin{sphinxuseclass}{col-xs-12}
+\begin{sphinxuseclass}{p-2}
+\begin{sphinxuseclass}{card}
+\begin{sphinxuseclass}{w-100}
+\begin{sphinxuseclass}{shadow}
+\begin{sphinxuseclass}{card-body}
+\sphinxAtStartPar
+\sphinxincludegraphics{{MO_Inst_CCHAS}.png}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{d-flex}
+\begin{sphinxuseclass}{col-lg-6}
+\begin{sphinxuseclass}{col-md-6}
+\begin{sphinxuseclass}{col-sm-6}
+\begin{sphinxuseclass}{col-xs-12}
+\begin{sphinxuseclass}{p-2}
+\begin{sphinxuseclass}{card}
+\begin{sphinxuseclass}{w-100}
+\begin{sphinxuseclass}{shadow}
+\begin{sphinxuseclass}{card-body}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Measurement
+
+\item {} 
+\sphinxAtStartPar
+Set point
+
+\item {} 
+\sphinxAtStartPar
+Status
+
+\end{itemize}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\end{sphinxuseclass}\end{sphinxadmonition}
+
+\begin{sphinxadmonition}{important}{Important:}
+\sphinxAtStartPar
+In the master instance, on every slot, you can see the setpoint arriving from the instance and the measurement going back;
+\sphinxincludegraphics{{MO_Slot_A}.png}
+\end{sphinxadmonition}
+
 
 
 
