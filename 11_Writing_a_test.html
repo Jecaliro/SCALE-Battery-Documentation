@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Part 3 &#8212; Battery Application</title>
+    <title>Writing a test &#8212; Battery Application</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,8 +55,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Part 4" href="04_Part04.html" />
-    <link rel="prev" title="MORPHEE® Multi-instance" href="02_Multi-Instance.html" />
+    <link rel="prev" title="Component configuration" href="10_Component_configuration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -119,40 +118,67 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Implementation
- </span>
-</p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Part 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="04_Part04.html">
-   Part 4
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_Part02.html">
-   Software architecture
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
   Configuration
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="05_Part05.html">
-   Part 5
+  <a class="reference internal" href="03_First-Installation.html">
+   First Installation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Part06.html">
-   Part 6
+  <a class="reference internal" href="04_Base-configuration.html">
+   Base configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_SCALE_Battery-configuration.html">
+   Runtime configuration
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Utilization
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_Starting_An_instance.html">
+   Starting an Instance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07_Starting_Several_instance.html">
+   Starting several Instances
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference Guide
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_Interfacing_through_file.html">
+   Interfacing through file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_Interfacing_with_FlexLab.html">
+   Interfacing with FlexLab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_Component_configuration.html">
+   Component configuration
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Writing a test
   </a>
  </li>
 </ul>
@@ -196,9 +222,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/03_Part03.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/11_Writing_a_test.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -213,7 +239,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F03_Part03.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F11_Writing_a_test.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -241,7 +267,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Part 3</h1>
+                <h1>Writing a test</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -252,8 +278,16 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="part-3">
-<h1>Part 3<a class="headerlink" href="#part-3" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="writing-a-test">
+<h1>Writing a test<a class="headerlink" href="#writing-a-test" title="Permalink to this headline">¶</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>T H I S</p>
+<p>S E C T I O N</p>
+<p>I S</p>
+<p>U N D E R</p>
+<p>C O N S T R U C T I O N</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -281,19 +315,12 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="02_Multi-Instance.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="10_Component_configuration.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">MORPHEE® Multi-instance</p>
+            <p class="prev-next-title">Component configuration</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="04_Part04.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Part 4</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             

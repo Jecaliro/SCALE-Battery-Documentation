@@ -150,6 +150,38 @@
    Starting an Instance
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="07_Starting_Several_instance.html">
+   Starting several Instances
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference Guide
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_Interfacing_through_file.html">
+   Interfacing through file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_Interfacing_with_FlexLab.html">
+   Interfacing with FlexLab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_Component_configuration.html">
+   Component configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_Writing_a_test.html">
+   Writing a test
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -447,7 +479,9 @@ For example, if globaly a system has 8 channels, we can:</p>
 <div class="section" id="software-architecture">
 <h2>Software architecture<a class="headerlink" href="#software-architecture" title="Permalink to this headline">¶</a></h2>
 <p>Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic…), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in <a class="reference internal" href="02_Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> chapter.</p>
-<p><img alt="" src="_images/Battery_Concept.png" /></p>
+<div class="full-width docutils">
+<img alt="_images/Battery_Concept.png" src="_images/Battery_Concept.png" />
+</div>
 <p>Objective is to keep all instances as identical as possible. Only some interfaces can change;</p>
 <ul class="simple">
 <li><p>BMS</p></li>

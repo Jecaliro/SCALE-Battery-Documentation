@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>General presentation &#8212; Battery Application</title>
+    <title>Starting several Instances &#8212; Battery Application</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,6 +55,8 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Interfacing through file" href="08_Interfacing_through_file.html" />
+    <link rel="prev" title="Starting an Instance" href="06_Starting_An_instance.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,33 +116,6 @@
    MORPHEE® Multi-instance
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="03_SCALE-Battery-Concept.html">
-   SCALE Battery Concept
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Implementation
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="03_Part03.html">
-   Part 3
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="04_Part04.html">
-   Part 4
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_Part02.html">
-   Software architecture
-  </a>
- </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -149,13 +124,62 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="05_Part05.html">
-   Part 5
+  <a class="reference internal" href="03_First-Installation.html">
+   First Installation
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Part06.html">
-   Part 6
+  <a class="reference internal" href="04_Base-configuration.html">
+   Base configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_SCALE_Battery-configuration.html">
+   Runtime configuration
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Utilization
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_Starting_An_instance.html">
+   Starting an Instance
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Starting several Instances
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference Guide
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_Interfacing_through_file.html">
+   Interfacing through file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_Interfacing_with_FlexLab.html">
+   Interfacing with FlexLab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_Component_configuration.html">
+   Component configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_Writing_a_test.html">
+   Writing a test
   </a>
  </li>
 </ul>
@@ -199,9 +223,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/01_Part01.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/07_Starting_Several_instance.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -216,7 +240,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F01_Part01.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F07_Starting_Several_instance.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -232,61 +256,11 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/Jecaliro/SCALE-Battery-Documentation/master?urlpath=tree/01_Part01.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="lancement Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contenu
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-what-is-it">
-   Multi-Instance… What is it?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-key-points">
-   Multi-Instance… Key points
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-references">
-   Multi-Instance… References
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-limitation">
-   Multi-Instance… Limitation
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -294,146 +268,26 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>General presentation</h1>
+                <h1>Starting several Instances</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contenu </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-what-is-it">
-   Multi-Instance… What is it?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-key-points">
-   Multi-Instance… Key points
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-references">
-   Multi-Instance… References
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#multi-instance-limitation">
-   Multi-Instance… Limitation
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="general-presentation">
-<h1>General presentation<a class="headerlink" href="#general-presentation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p><strong>SCALE Battery</strong> has been developed to address all type of battery;</p>
-<ul class="simple">
-<li><p>Cell</p></li>
-<li><p>Module</p></li>
-<li><p>Pack</p></li>
-</ul>
-<p>To meet the market demand, we are using the <a class="reference internal" href="Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> concept.
-This allows to start on the the same computer;</p>
-<ul class="simple">
-<li><p>Up to 32 cell tests in parallel</p></li>
-<li><p>Up to 16 Module tests in parallel</p></li>
-<li><p>Up to 8 Packs in parallel</p></li>
-</ul>
-</div>
-<div class="section" id="multi-instance-what-is-it">
-<h2>Multi-Instance… What is it?<a class="headerlink" href="#multi-instance-what-is-it" title="Permalink to this headline">¶</a></h2>
-<p>MORPHEE multi-instance makes it possible to run a dedicated number of instances, independent the one from the others, in parallel on one computer. Then, each MORPHEE becomes a complete automation system, with its own acquisition, its own test procedure, its own dashboard, and its own alarms.</p>
-<p align="center"> <img src="./images/Multi-Instance-Global.png" style="width: 15%;" />
-<p>In order to ensure cohabitation, some functions allow to exchange data between the different instances, facilitating measurement, events and equipment sharing.</p>
-<p>To consolidate multi-instance, a new concept of real time load balancing has been developed, allowing to take advantage of existing computer multi-core architecture.</p>
-</div>
-<div class="section" id="multi-instance-key-points">
-<h2>Multi-Instance… Key points<a class="headerlink" href="#multi-instance-key-points" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>One MORPHEE master with <strong>X</strong> MORPHEE instances at the same time</p>
-<ul>
-<li><p>Independent testing procedure</p></li>
-<li><p>Independent alarms</p></li>
-<li><p>Independent logging</p></li>
-<li><p>Independent screens</p></li>
-</ul>
-</li>
-<li><p>Possibility to use different shared hardware by instance. For example, use of one CAN channels in one instance and another one in another instance.</p></li>
-<li><p>Possibility to share channels values between instances through shared memory.</p></li>
-<li><p>Possibility to share events between instances for global synchronization, for example stop all instances, or pause all instances.</p></li>
-</ul>
-</div>
-<div class="section" id="multi-instance-references">
-<h2>Multi-Instance… References<a class="headerlink" href="#multi-instance-references" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Ref</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>SA-M64-MULTI-04</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>4</strong> test instances</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>SA-M64-MULTI-08</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>8</strong> test instances</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>SA-M64-MULTI-16</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>16</strong> test instances</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>SA-M64-MULTI-24</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>24</strong> test instances</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>SA-M64-MULTI-32</strong></p></td>
-<td><p>Possibility to start <strong>1</strong> Master Instance + <strong>32</strong> test instances</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="multi-instance-limitation">
-<h2>Multi-Instance… Limitation<a class="headerlink" href="#multi-instance-limitation" title="Permalink to this headline">¶</a></h2>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Ref</p></th>
-<th class="head"><p>Master</p></th>
-<th class="head"><p>Instances</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Up to 1 + 8 instances</strong></p></td>
-<td><p>1 kHz</p></td>
-<td><p>1 kHz</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Up to 1 + 16 instances</strong></p></td>
-<td><p>500 Hz</p></td>
-<td><p>500 Hz</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Up to 1 + 32 instances</strong></p></td>
-<td><p>100 Hz</p></td>
-<td><p>100 Hz</p></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<div><p>[!NOTE]
-This limitations has been achieved with FEV 8 cores computer.</p>
-</div></blockquote>
+  <div class="tex2jax_ignore mathjax_ignore section" id="starting-several-instances">
+<h1>Starting several Instances<a class="headerlink" href="#starting-several-instances" title="Permalink to this headline">¶</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>T H I S</p>
+<p>S E C T I O N</p>
+<p>I S</p>
+<p>U N D E R</p>
+<p>C O N S T R U C T I O N</p>
 </div>
 </div>
 
@@ -461,7 +315,21 @@ This limitations has been achieved with FEV 8 cores computer.</p>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="06_Starting_An_instance.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Starting an Instance</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="08_Interfacing_through_file.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Interfacing through file</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>

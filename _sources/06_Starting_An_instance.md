@@ -27,9 +27,9 @@ Once the instance started, you should **PREPARE** the different component. For t
 
 When prepared, you are ready to send commands to the related **ENERGY_SYSTEM**
 
-```{note}
-**Control Management** 
-````{panels}
+`````{div} full-width
+````{note} **Control Management** 
+```{panels}
 ![](./images/MO_Inst_CMA.png)
 ---
 - States:
@@ -45,30 +45,32 @@ When prepared, you are ready to send commands to the related **ENERGY_SYSTEM**
     - SET_CC: Integrated command to send current setpoint with voltage and duration limit.
     - SET_CV: Integrated command to send voltage setpoint with current and duration limit.
     - SET_CP: Integrated command to send power setpoint with voltage and duration limit.
+```
 ````
+`````
 
-### The coolant confitioning
+### The coolant conditioning
 
-```{note}
-**Coolant conditionning** 
-````{panels}
+````{note} **Coolant conditionning** 
+```{panels}
 ![](./images/MO_Inst_CCS.png)
 ---
 - Start the conditioning
     - When started, different setpoint are take into account
 - Stop the conditioning
+```
 ````
 
 ### The climatic chamber
 
-```{note}
-**Climatic Chamber** 
-````{panels}
+````{note} **Climatic Chamber** 
+```{panels}
 ![](./images/MO_Inst_CCHAS.png)
 ---
 - Measurement
 - Set point
 - Status
+```
 ````
 
 ```{important}
