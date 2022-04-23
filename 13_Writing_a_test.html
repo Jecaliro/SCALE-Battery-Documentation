@@ -55,7 +55,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Component configuration" href="10_Component_configuration.html" />
+    <link rel="prev" title="Interfacing with SCADA" href="11_Interfacing_With_SCADA.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -137,6 +137,11 @@
    Runtime configuration
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_RTX_Configuration.html">
+   RTX configuration
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -145,12 +150,12 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Starting_An_instance.html">
+  <a class="reference internal" href="07_Starting_An_instance.html">
    Starting an Instance
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="07_Starting_Several_instance.html">
+  <a class="reference internal" href="08_Starting_Several_instance.html">
    Starting several Instances
   </a>
  </li>
@@ -162,18 +167,18 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="08_Interfacing_through_file.html">
+  <a class="reference internal" href="09_Interfacing_through_file.html">
    Interfacing through file
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="09_Interfacing_with_FlexLab.html">
+  <a class="reference internal" href="10_Interfacing_with_FlexLab.html">
    Interfacing with FlexLab
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="10_Component_configuration.html">
-   Component configuration
+  <a class="reference internal" href="11_Interfacing_With_SCADA.html">
+   Interfacing with SCADA
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -222,7 +227,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/11_Writing_a_test.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/13_Writing_a_test.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -239,7 +244,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F11_Writing_a_test.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F13_Writing_a_test.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -260,6 +265,36 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basics">
+   Basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-components-used-in-a-test">
+     Selecting components used in a test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-component-methods-to-write-a-test">
+     Using component Methods to write a test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-parameters-to-write-a-test">
+     Using Parameters to write a test
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -272,6 +307,36 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basics">
+   Basics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selecting-components-used-in-a-test">
+     Selecting components used in a test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-component-methods-to-write-a-test">
+     Using component Methods to write a test
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-parameters-to-write-a-test">
+     Using Parameters to write a test
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -280,13 +345,40 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="writing-a-test">
 <h1>Writing a test<a class="headerlink" href="#writing-a-test" title="Permalink to this headline">¶</a></h1>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>T H I S</p>
-<p>S E C T I O N</p>
-<p>I S</p>
-<p>U N D E R</p>
-<p>C O N S T R U C T I O N</p>
+<div class="section" id="basics">
+<h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="selecting-components-used-in-a-test">
+<h3>Selecting components used in a test<a class="headerlink" href="#selecting-components-used-in-a-test" title="Permalink to this headline">¶</a></h3>
+<p>To be able to access all needed functionnality while writting a test, it is necessary to add the adapted components in the test itself:</p>
+<p><img alt="" src="_images/Test_Comp_Cfg.png" /></p>
+</div>
+<div class="section" id="using-component-methods-to-write-a-test">
+<h3>Using component Methods to write a test<a class="headerlink" href="#using-component-methods-to-write-a-test" title="Permalink to this headline">¶</a></h3>
+<p>To write a test, it is necessary to use component methods dedicated for that.</p>
+<p>In General:</p>
+<ul class="simple">
+<li><p>CONTROL_MANAGEMENT is dedicated to apply the requested setpoint to UUT whatever is the configuration and whatever is the physical energy system. Configuration is handled by the MULTIINSTANCE_MANAGEMENT component in the master configuration. CONTROL_MANAGEMENT is linked with the ENERGY_SYSTEM_SHARING</p></li>
+<li><p>CLIMATIC_CHAMBER_SHARING is dedicated to manage the temperature of the test. It will be synchronize with others instances in regards to the global configuration.</p></li>
+<li><p>COOLANT_COND_SHARING is dedicated to manage the temperature of the UUT cooling. You can start it, stop it and select the needed setpoint.</p></li>
+</ul>
+<p>Methods to use are as follow;</p>
+<div class="full-width docutils">
+<img alt="_images/Test_Methods_desc.png" src="_images/Test_Methods_desc.png" />
+</div>
+</div>
+<div class="section" id="using-parameters-to-write-a-test">
+<h3>Using Parameters to write a test<a class="headerlink" href="#using-parameters-to-write-a-test" title="Permalink to this headline">¶</a></h3>
+<p>Parameters are very important to standardize test configuration and test writing. Use them as much as possible;</p>
+<ul class="simple">
+<li><p>To securize a test</p></li>
+<li><p>To parametrize a test</p></li>
+<li><p>To fix some limits…</p></li>
+</ul>
+<p><strong>SCALE</strong> provides some parameters that you can ‘fixed’ directly in the configuration, or that you can ‘overwritte’ by <strong>FlexLab®</strong> or others way (see <span class="xref myst">interfacing through file</span> for example).
+You can also add as many parameter as you want to customize your application!</p>
+<p>For example here is the list of UUT standard parameters<br />
+<img alt="" src="_images/Test_Parameters.png" /></p>
+</div>
 </div>
 </div>
 
@@ -315,11 +407,11 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="10_Component_configuration.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="11_Interfacing_With_SCADA.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Component configuration</p>
+            <p class="prev-next-title">Interfacing with SCADA</p>
         </div>
     </a>
 </div>

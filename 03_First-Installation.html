@@ -138,6 +138,11 @@
    Runtime configuration
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_RTX_Configuration.html">
+   RTX configuration
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -146,12 +151,12 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Starting_An_instance.html">
+  <a class="reference internal" href="07_Starting_An_instance.html">
    Starting an Instance
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="07_Starting_Several_instance.html">
+  <a class="reference internal" href="08_Starting_Several_instance.html">
    Starting several Instances
   </a>
  </li>
@@ -163,22 +168,22 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="08_Interfacing_through_file.html">
+  <a class="reference internal" href="09_Interfacing_through_file.html">
    Interfacing through file
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="09_Interfacing_with_FlexLab.html">
+  <a class="reference internal" href="10_Interfacing_with_FlexLab.html">
    Interfacing with FlexLab
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="10_Component_configuration.html">
-   Component configuration
+  <a class="reference internal" href="11_Interfacing_With_SCADA.html">
+   Interfacing with SCADA
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="11_Writing_a_test.html">
+  <a class="reference internal" href="13_Writing_a_test.html">
    Writing a test
   </a>
  </li>
@@ -272,6 +277,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#application-installation">
+   Application Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#licensing-protection">
    Licensing / Protection
   </a>
@@ -302,6 +312,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#application-installation">
+   Application Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#licensing-protection">
    Licensing / Protection
   </a>
@@ -319,16 +334,33 @@
 <h1>First Installation<a class="headerlink" href="#first-installation" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="software-installation">
 <h2>Software Installation<a class="headerlink" href="#software-installation" title="Permalink to this headline">¶</a></h2>
-<p>Use of MORPHEE® 3.4.x</p>
-<p>Use of last SCALE Battery version</p>
-<p>All version and setup can be download here &gt;&gt; <a class="reference external" href="https://download.fev-software.com/DownloadPortal/pages/DownloadPortal">https://download.fev-software.com/DownloadPortal/pages/DownloadPortal</a></p>
+<p>To install SCALE Battery, you have to follow standard MORPHEE® Workstation Installation.</p>
+<img alt="_images/FEV_prerequisite.png" src="_images/FEV_prerequisite.png" />
+<p>Generally this step is performed by our team and you just need  to enjoy SCALE Battery use.</p>
+<p>In case of upgrade, all version are accessible in our <a class="reference external" href="https://download.fev-software.com/DownloadPortal/pages/DownloadPortal">donwload area</a></p>
+<div class="full-width docutils">
+<img alt="_images/Download_Area.png" src="_images/Download_Area.png" />
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>SCALE Battery needs MORPHEE® 3.4 version</p>
+</div>
+</div>
+<div class="section" id="application-installation">
+<h2>Application Installation<a class="headerlink" href="#application-installation" title="Permalink to this headline">¶</a></h2>
+<p>In the same way, it is preferable to leave the installation of SCALE Battery to the FEV teams.
+Nevertheless a <strong>ZBENCH</strong> of the application is also available on our <a class="reference external" href="https://download.fev-software.com/DownloadPortal/pages/DownloadPortal">donwload area</a>.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Basic SCALE BAttery installation do not take care of your particular configuration. We recommend to backup your configuration before performing a new one</p>
+</div>
 </div>
 <div class="section" id="licensing-protection">
 <h2>Licensing / Protection<a class="headerlink" href="#licensing-protection" title="Permalink to this headline">¶</a></h2>
-<p>Get protection codes:</p>
+<p>FEV products are licensed and can be used only with protection codes.
+We recommend to contact your local sale representative to get your protection code.</p>
+<p>Needed license for <strong>SCALE Battery</strong></p>
 <ul class="simple">
-<li><p>SCALE Battery</p>
-<ul>
 <li><p>Management</p></li>
 <li><p>Control management.BATTERY</p></li>
 <li><p>MULTIINSTANCE_MANAGEMENT</p></li>
@@ -336,21 +368,17 @@
 <li><p>CLIMATIC_CHAMBER_SHARING</p></li>
 <li><p>COOLANT_COND_SHARING</p></li>
 </ul>
-</li>
-<li><p>SCALE Devices</p>
-<ul>
+<p>Needed licenses for <strong>SCALE Devices</strong></p>
+<ul class="simple">
 <li><p>ENERGY_SYSTEM_X.<em><strong>your device</strong></em></p></li>
 <li><p>CLIMATIC_CHAMBER_X.<em><strong>your device</strong></em></p></li>
 <li><p>COOLANT_COND_X.<em><strong>your device</strong></em></p></li>
 </ul>
-</li>
-<li><p>Multi instance</p>
-<ul>
+<p>Needed licenses for Multi instance</p>
+<ul class="simple">
 <li><p>Multi Instance code for 4, 8, 16 or 32 instances</p></li>
 </ul>
-</li>
-</ul>
-<p>If codes are missing please contact <a class="reference external" href="mailto:hotline&#37;&#52;&#48;fev&#46;com">hotline<span>&#64;</span>fev<span>&#46;</span>com</a></p>
+<p>If codes are missing please contact <span class="xref myst">hotline&#64;fev.com</span></p>
 </div>
 </div>
 

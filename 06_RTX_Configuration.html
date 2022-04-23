@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SCALE Battery Documentation &#8212; Battery Application</title>
+    <title>RTX configuration &#8212; Battery Application</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,6 +55,8 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Starting an Instance" href="07_Starting_An_instance.html" />
+    <link rel="prev" title="Runtime configuration" href="05_SCALE_Battery-configuration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -120,7 +122,7 @@
   Configuration
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="03_First-Installation.html">
    First Installation
@@ -136,8 +138,8 @@
    Runtime configuration
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_RTX_Configuration.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    RTX configuration
   </a>
  </li>
@@ -226,7 +228,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/06_RTX_Configuration.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -243,7 +245,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         <a class="issues-button"
-            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/Jecaliro/SCALE-Battery-Documentation/issues/new?title=Issue%20on%20page%20%2F06_RTX_Configuration.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
         
@@ -264,6 +266,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rtx-general-configuration">
+   RTX General configuration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rtx-core-assignation">
+   RTX Core assignation
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -271,62 +291,74 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>SCALE Battery Documentation</h1>
+                <h1>RTX configuration</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rtx-general-configuration">
+   RTX General configuration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rtx-core-assignation">
+   RTX Core assignation
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="scale-battery-documentation">
-<h1>SCALE Battery Documentation<a class="headerlink" href="#scale-battery-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to <strong>SCALE</strong> Battery Documentation!</p>
-<blockquote>
-<div><p><em>Essential element of new transportation area, batteries are key part of the energy transition. In constant evolution, battery testing has to be innovative and reactive!</em></p>
-</div></blockquote>
-<p>SCALE Battery (<strong>S</strong>tandard and <strong>C</strong>onfigurable <strong>A</strong>pplication for <strong>L</strong>aboratory <strong>E</strong>nvirronment) is a MORPHEE® application for battery test cells. It allows to perform test on:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="rtx-configuration">
+<h1>RTX configuration<a class="headerlink" href="#rtx-configuration" title="Permalink to this headline">¶</a></h1>
+<p>In the global configuration, RTX is a Keypoint becasue:</p>
 <ul class="simple">
-<li><p>Cells,</p></li>
-<li><p>Module</p></li>
-<li><p>Pack.</p></li>
+<li><p>It differs from a Single instance configuration</p></li>
+<li><p>It allows to specify on which RTX core you want to start which instance.</p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>SCALE</strong> also exists for many different kind of test cell on automotive market:</p>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
+<div class="section" id="rtx-general-configuration">
+<h2>RTX General configuration<a class="headerlink" href="#rtx-general-configuration" title="Permalink to this headline">¶</a></h2>
+<p>The global RTX configuration is globally identical to the standard configuration except that, because of mutli-instance, Local memory pool and Expend size has to be increased as follow;</p>
+<img alt="_images/rtx_config.png" src="_images/rtx_config.png" />
+<p>Another important point is the number of cores dedicated to RTX and to Windows.</p>
+<p>As now, most of computers use several cores, it makes sense to share them between RTX and Windows. Actual experience shows that on a computer with 6 cores or more, <strong>3 cores</strong> can be dedicated to Windows.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you encounter any load issue on your computer, it makes sense to study where problems are (Windows side or RTX side), and modify configuration in regard.</p>
+</div>
+</div>
+<div class="section" id="rtx-core-assignation">
+<h2>RTX Core assignation<a class="headerlink" href="#rtx-core-assignation" title="Permalink to this headline">¶</a></h2>
+<p>Inside RTX world, there is also the possibility to distribute the load between the different cores. This can be done through <code class="docutils literal notranslate"><span class="pre">RTXCPUAssignment.exe</span></code>.
+You can access this tool directly from <strong>MORPHEE®</strong> toolbar, or in <strong>MORPHEE®</strong> Bin directory:</p>
+<img alt="_images/rtx_cpu_assign.png" src="_images/rtx_cpu_assign.png" />
+<p>The tool diplay:</p>
 <ul class="simple">
-<li><p class="card-text"><strong>SCALE Component</strong> : A basic to test all your automotive components.</p></li>
-<li><p class="card-text"><strong>SCALE Engine</strong> : The state of the art for all of your thermal and hybrid engine test benches. From End-Of-Line to Research &amp; Development solution.</p></li>
-<li><p class="card-text"><strong>SCALE Emotor</strong> : Adapt your test benches and working methods to new market trends. E-mobility is more than ever a reality!</p></li>
+<li><p>All availble cores</p></li>
+<li><p>All available instances</p></li>
 </ul>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-body docutils">
+<p>Objective is now to share the load on the different cores, by drag &amp; dropping instances.</p>
+<p>General rules are:</p>
 <ul class="simple">
-<li><p class="card-text"><strong>SCALE Fuel Cell</strong> : The new trend for power generation in modern vehicles. Tomorrow’s ideas have already a SCALE solution today.</p></li>
-<li><p class="card-text"><strong>SCALE Epowertrain/Powertrain</strong> : Testing the complete powertrain in its conventional, hybrid or electrical configuration is now possible.</p></li>
-<li><p class="card-text"><strong>SCALE Vehicle</strong> : For Vehicle on chassis dynamometer testing</p></li>
+<li><p>Master Instance is always the heaviest one, then try to dedicate a core to it. If not possible, try to minimize quantity of instances on this core.</p></li>
+<li><p>Globally distribute all instances on the others cores.</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Check that every instance configuration is using only one core:</p>
+<img alt="_images/rtx_one_core_cfg.png" src="_images/rtx_one_core_cfg.png" />
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>Get more info on <a class="reference external" href="https://morphee.fev.com"><strong>MORPHEE</strong></a>,</p>
 </div>
 </div>
 
@@ -354,7 +386,21 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="05_SCALE_Battery-configuration.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Runtime configuration</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="07_Starting_An_instance.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Starting an Instance</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>

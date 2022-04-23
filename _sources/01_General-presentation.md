@@ -7,7 +7,7 @@
 * Module
 * Pack
 
-To meet the market demand, we are using the [MORPHEE® multi-instance](Multi-Instance.ipynb) concept.
+To meet the market demand, we are using the [MORPHEE® multi-instance](02_Multi-Instance.md) concept.
 This allows to start on the the same computer;
 * Up to 32 cell tests in parallel
 * Up to 16 Module tests in parallel
