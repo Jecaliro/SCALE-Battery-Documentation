@@ -282,8 +282,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equipements-and-measure">
-     Equipements and measure
+    <a class="reference internal nav-link" href="#equipments-and-measure">
+     Equipments and measure
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -344,8 +344,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equipements-and-measure">
-     Equipements and measure
+    <a class="reference internal nav-link" href="#equipments-and-measure">
+     Equipments and measure
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -404,11 +404,11 @@ This allows to start on the the same computer;</p>
 </div>
 <div class="section" id="battery-testing-principle">
 <h2>Battery Testing principle<a class="headerlink" href="#battery-testing-principle" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="equipements-and-measure">
-<h3>Equipements and measure<a class="headerlink" href="#equipements-and-measure" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="equipments-and-measure">
+<h3>Equipments and measure<a class="headerlink" href="#equipments-and-measure" title="Permalink to this headline">¶</a></h3>
 <p>To test a battery we need to have:</p>
 <ul class="simple">
-<li><p><strong>An Energy System</strong> &gt;&gt; Allow to charge and discharge the battery. Generally it also manage the re-injection on the network.</p></li>
+<li><p><strong>An Energy System</strong> &gt;&gt; Allow to charge and discharge the battery. Generally it also manages the re-injection on the network.</p></li>
 <li><p><strong>A climatic chamber</strong> - <em>optional</em> &gt;&gt; Allow to simulate environmental conditions</p></li>
 <li><p><strong>A coolant conditionning system</strong> - <em>optional</em> &gt;&gt; use to cooldown the battery in same condition as in the vehicle.</p></li>
 <li><p><strong>A BMS</strong> (<strong>B</strong>attery <strong>M</strong>angement <strong>S</strong>ystem) - <em>optional</em> &gt;&gt; Battery control unit handling the different cells/modules/pack and different modes (charge/sleep/Drive)</p></li>
@@ -417,12 +417,12 @@ This allows to start on the the same computer;</p>
 <p><img alt="" src="_images/Battery_test_concept.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Except Energy System, all others equipement can be ‘Optional’, depending on each application.</p>
+<p>Except Energy System, all others equipment can be ‘Optional’, depending on each application.</p>
 </div>
 </div>
 <div class="section" id="energy-system-channel-concept">
 <h3>Energy system channel concept<a class="headerlink" href="#energy-system-channel-concept" title="Permalink to this headline">¶</a></h3>
-<p>Energy System have one or several channel allowing to address one or several battery:</p>
+<p>Energy System has one or several channel allowing to address one or several battery:</p>
 <ul class="simple">
 <li><p>If there is a need for more current, channels can we wired in parallel</p></li>
 <li><p>If there is a need for more voltage, channels can be wired in serial</p></li>
@@ -439,10 +439,10 @@ This allows to start on the the same computer;</p>
 </tr>
 </tbody>
 </table>
-<p>Regarding equipement capability, it is also possible to combine Energy system cascading and channel parallelisation or serialisation.</p>
+<p>Regarding equipment capability, it is also possible to combine Energy system cascading and channel parallelisation or serialisation.</p>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="text-align:center head"><p>Equipement and channel cascading</p></th>
+<tr class="row-odd"><th class="text-align:center head"><p>Equipment and channel cascading</p></th>
 </tr>
 </thead>
 <tbody>
@@ -453,7 +453,7 @@ This allows to start on the the same computer;</p>
 </div>
 <div class="section" id="modularity">
 <h3>Modularity<a class="headerlink" href="#modularity" title="Permalink to this headline">¶</a></h3>
-<p>Generally, in one climatic chamber there will be several battery in test. Climatic condition are identical but tests can be different!</p>
+<p>Generally, in one climatic chamber there will be several battery in test. Climatic conditions are identical but tests can be different!</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p>1 battery</p></th>
@@ -483,14 +483,14 @@ For example, if globaly a system has 8 channels, we can:</p>
 </div>
 <div class="section" id="software-architecture">
 <h2>Software architecture<a class="headerlink" href="#software-architecture" title="Permalink to this headline">¶</a></h2>
-<p>Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic…), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in <a class="reference internal" href="02_Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> chapter.</p>
+<p>Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic…), and on another hand several procedures executing the test(call instances). Communication between main application and procedure is developped the in <a class="reference internal" href="02_Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> chapter.</p>
 <div class="full-width docutils">
 <img alt="_images/Battery_Concept.png" src="_images/Battery_Concept.png" />
 </div>
 <p>Objective is to keep all instances as identical as possible. Only some interfaces can change;</p>
 <ul class="simple">
 <li><p>BMS</p></li>
-<li><p>Specif devices.</p></li>
+<li><p>Specific devices.</p></li>
 </ul>
 <p>A specific configuration (hardware connexion) can also be done for every instance..</p>
 </div>

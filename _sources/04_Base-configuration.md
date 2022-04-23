@@ -4,19 +4,19 @@
 This documentation will not develop the hardware and feature configuration.
 This has to be done previously.
 
-Nevertheless, it will be possible to test all equipement one by one when it will be possible to start MORPHEE® master instance. 
+Nevertheless, it will be possible to test all equipment one by one when it will be possible to start MORPHEE® master instance. 
 ```
 
 ## Principle
 
-Concept of the SCALE Battery configuration is to use most of the equipement in the master instance and to give the possibility for each instance to attach to one (or more) equipement through 'Sharing' components;
+Concept of the SCALE Battery configuration is to use most of the equipment in the master instance and to give the possibility for each instance to attach to one (or more) equipment through 'Sharing' components;
 
 ````{div} full-width
 ```{image} ./images/Battery_Concept.png
 ```
 ````
 
-The Sharing equipements take care of all present equipement of the familly;
+The Sharing equipments take care of all present equipment of the familly;
 
 ENERGY_SYSTEM_SHARING 
 *   ENERGY_SYSTEM_1
@@ -40,7 +40,7 @@ Component role are defined below:
 | **MULTIINSTANCE_MANAGEMENT**       | *SCALE* |    **X**    |        | Handling of the configuration (see below) and instances                                                                                                                                                                            |
 | **ACQUISITION**                   |       |    **X**    |   (**X**)  | Component for "normed name" customer channels. This is the main place to define: Link to hardware channel Securities Calculation Acquisition plan                                                                                  |
 | **HARDWARE**                       |       |    **X**    |        | Component to place hardware channels of the configuration. Act as a simple passive component to concentrate acquisition channels.                                                                                                  |
-| ***Customer specific component***   |       |    **X**    |   (**X**)  | All needed component for customer configuration, such as; PLC Barcode Various interface ...                                                                                                                                        |
+| ***Customer specific component***   |       |    **X**    |   (**X**)  | All needed components for customer configuration, such as; PLC Barcode Various interface ...                                                                                                                                        |
 | **BMS**                           | *SCALE* |         |    **X**   | Communication with the battery BMS, adressed either in CAN or FDX protocol. Frame given by SCALE architecture, but possibility to ADD new methods and channels if there is a need to add customer specific command (father method) |
 | **DUT**                            | *SCALE* |         |    **X**   | DUT description. Frame given by SCALE architecture, but possibility to ADD new parameters if needed.                                                                                                                               |
 | **ENERGY_SYSTEM_SHARING**          | *SCALE* | .MASTER | .SLAVE | Management of different ENERGY_SYSTEM; In link with the instance In regards to configuration                                                                                                                                       |
@@ -64,7 +64,7 @@ Here is an example of a standard Bench configuration;
 
 
 ````{hint}
-To avoid re-design of the Dashboard, it makes sense to always use all equipement in the Bench configuration and make the link 'Optional' if they are not used;
+To avoid re-design of the Dashboard, it makes sense to always use all equipment in the Bench configuration and make the link 'Optional' if they are not used;
 ```{image} ./images/UEditor_Link_Optionnal.png
 :align: center
 ```
