@@ -106,6 +106,6 @@ The Energy System Sharing window will display actual configuration with availabl
 
 ![](./images/MO_Cfg_Energy_sharing.png)
 
-For every Energy System used in the [configuration](04_Base-configuration.md), it will display:
-* Name of the component
-* Number of channels in this component
+For every slot used in the [configuration](04_Base-configuration.md), it will display:
+* Name of the ENERGY_SYSTEM component
+* Number of channels of this component
