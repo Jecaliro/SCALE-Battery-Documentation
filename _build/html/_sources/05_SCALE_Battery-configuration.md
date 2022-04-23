@@ -90,13 +90,15 @@ As it is possible to have several slots inside the same climatic chamber, it is 
 
 The possibilities are:
 
-|                             |                                                                                                                                                                 |
+```{div} full-width
+|   Selection                          |   Description                                                                                                                                                              |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Managed by master only**       | The temperature setpoint is managed by the master. Every test from instances, even if sending a setpoint, will not be taken into account                        |
 | **Last T°C value received**     | The last temperature received will be applied, wherever and whenever it arrives.                                                                                |
 | **Synchronized on T°C**         | Wait that all runing instances send the same setpoint to apply it.  All the test on the different instances will be on hold as long as setpoint is not applyed. |
 | **Handled by instance *X*** | Only setpoint coming from Instance ***X*** will be applied.                                                                                                     |
 |                             |                                                                                                                                                                 |
+```
 
 ## Energy System sharing
 

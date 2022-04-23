@@ -20,7 +20,14 @@ parts:
     - file: 03_First-Installation.md
     - file: 04_Base-configuration.md
     - file: 05_SCALE_Battery-configuration.md
+    - file: 06_RTX_Configuration.md   
   - caption: Utilization
     chapters:
-    - file: 06_Starting_An_instance.md
-    - file: 06_Part06.ipynb
+    - file: 07_Starting_An_instance.md
+    - file: 08_Starting_Several_instance.md
+  - caption: Reference Guide
+    chapters:
+    - file: 09_Interfacing_through_file.md
+    - file: 10_Interfacing_with_FlexLab.md
+    - file: 11_Interfacing_With_SCADA.md   
+    - file: 13_Writing_a_test.md

@@ -57,14 +57,18 @@ Component role are defined below:
 
 Here is an example of a standard Bench configuration;
 
-![](./images/UEditor_Bench_config.png)
+```{image} ./images/UEditor_Bench_config.png
+:align: center
+:width: 250 px
+```
 
-```{hint}
+
+````{hint}
 To avoid re-design of the Dashboard, it makes sense to always use all equipement in the Bench configuration and make the link 'Optional' if they are not used;
 ```{image} ./images/UEditor_Link_Optionnal.png
 :align: center
 ```
-```
+````
 
 ### MultiInstance configuration
 

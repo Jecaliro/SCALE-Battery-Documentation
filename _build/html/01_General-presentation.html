@@ -138,6 +138,11 @@
    Runtime configuration
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_RTX_Configuration.html">
+   RTX configuration
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -146,8 +151,40 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="06_Starting_An_instance.html">
+  <a class="reference internal" href="07_Starting_An_instance.html">
    Starting an Instance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_Starting_Several_instance.html">
+   Starting several Instances
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference Guide
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_Interfacing_through_file.html">
+   Interfacing through file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_Interfacing_with_FlexLab.html">
+   Interfacing with FlexLab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11_Interfacing_With_SCADA.html">
+   Interfacing with SCADA
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="13_Writing_a_test.html">
+   Writing a test
   </a>
  </li>
 </ul>
@@ -357,7 +394,7 @@
 <li><p>Module</p></li>
 <li><p>Pack</p></li>
 </ul>
-<p>To meet the market demand, we are using the <span class="xref myst">MORPHEE® multi-instance</span> concept.
+<p>To meet the market demand, we are using the <a class="reference internal" href="02_Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> concept.
 This allows to start on the the same computer;</p>
 <ul class="simple">
 <li><p>Up to 32 cell tests in parallel</p></li>
@@ -447,7 +484,9 @@ For example, if globaly a system has 8 channels, we can:</p>
 <div class="section" id="software-architecture">
 <h2>Software architecture<a class="headerlink" href="#software-architecture" title="Permalink to this headline">¶</a></h2>
 <p>Software architecture is based in one hand, on a master application managing most of the equipments (Energy, cooling, acquisition, climatic…), and on another hand several procedure executing the test(call instances). Communication between main application and procedure is developped the in <a class="reference internal" href="02_Multi-Instance.html"><span class="doc std std-doc">MORPHEE® multi-instance</span></a> chapter.</p>
-<p><img alt="" src="_images/Battery_Concept.png" /></p>
+<div class="full-width docutils">
+<img alt="_images/Battery_Concept.png" src="_images/Battery_Concept.png" />
+</div>
 <p>Objective is to keep all instances as identical as possible. Only some interfaces can change;</p>
 <ul class="simple">
 <li><p>BMS</p></li>

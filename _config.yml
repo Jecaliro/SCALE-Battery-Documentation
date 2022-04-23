@@ -21,7 +21,10 @@ html:
 latex:
   latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
   use_jupyterbook_latex     : true # use sphinx-jupyterbook-latex for pdf builds as default
-  latex_logo                : images\SCALE_logo.png
   latex_documents:
     targetname              : SCALE_Battery.tex
-  
+
+Sphinx:
+  config:
+    latex_logo                : images\SCALE_logo.png
+    latex_toplevel_sectioning : 'part'
